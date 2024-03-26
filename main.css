@@ -1,0 +1,132 @@
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: Georgia, serif; */
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.25;
+}
+
+body{
+    margin-inline: 5rem;
+}
+
+hr{
+    border: black solid 1px;
+}
+
+
+
+#space {
+    display: inline;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    background-color: rgb(100, 200, 255);
+    height: 50px;
+    padding-inline: 5rem;
+    width: calc(100% + 10rem);
+    position: relative;
+    right: 5rem;
+}
+
+#header a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#header a:hover {
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#header>#main_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 64px;
+}
+
+#main_index img {
+    height: 75%;
+}
+
+
+
+#content{
+    background-color: rgb(225,225,225);
+    min-height: 900px;
+    display: flex;
+}
+
+#news_column{
+    min-height: 450px;
+    flex: 2;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1px;
+    width: 66.666666%;
+}
+
+.news_card{
+    background-color: white;
+    padding: 1rem;
+    height: 150px;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.news_image{
+    height: 100%;
+}
+
+.news_right{
+}
+
+.news_title{
+    margin-top: 10px;
+}
+
+.news_text{
+
+}
+
+
+
+#tools_column{
+    min-height: 450px;
+    flex: 1;
+    margin: 1rem;
+    margin-left: 0px;
+    width: 33.3333333%;
+}
+
+#search{
+    width: 100%;
+}
+
+#search>h3{
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1px;
+}
+
+#search>form{
+    background-color: white;
+    padding: 1rem;
+}
+
+#search>form>input{
+    width: 100%;
+    border: solid gainsboro 1px;
+    border-radius: 3px;
+    padding: 1rem;
+}
