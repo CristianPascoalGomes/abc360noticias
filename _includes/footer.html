@@ -1,0 +1,76 @@
+<style>
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: #015F83;
+        position: static;
+        bottom: 0px;
+        gap: 2rem;
+        font-size: small;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-block: 2rem;
+    }
+
+    .footer-column>h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-column>*>p{
+        display: inline-block;
+    }
+
+    .footer1{
+        align-items: start;
+    }
+
+    .footer2{
+        align-items: end;
+    }
+
+    footer>:first-child {
+        margin-left: 84px;
+    }
+
+    footer>:last-child {
+        margin-right: 84px;
+    }
+</style>
+
+
+<footer>
+    <div class="footer-column footer1">
+        <h3>
+            INSTITUCIONAL
+        </h3>
+        <a href="/">Página Inicial</a>
+        <a href="/quem-somos.html">Quem Somos</a>
+    </div>
+    <div class="footer-column footer2">
+        <h3>
+            FALE CONOSCO
+        </h3>
+        <div>
+            <p> contato@abc360.com.br</p>
+            <p class="fa fa-envelope"></p>
+        </div>
+        <a 	href="https://wa.me/+5511959963937">
+            <p>(11) 95996-3937</p>
+            <p class="fa fa-whatsapp"></p>
+        </a>
+        <a href="https://www.instagram.com/abc360noticias/">
+            <p>@abc360noticias</p>
+            <p class="fa fa-instagram"></p>
+        </a>
+        <a href="https://www.facebook.com/abc360noticias/">
+            <p>@abc360noticias</p>
+            <p class="fa fa-facebook"></p>
+        </a>
+    </div>
+</footer>

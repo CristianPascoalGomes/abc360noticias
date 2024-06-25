@@ -1,0 +1,43 @@
+---
+title: Quem Somos
+---
+
+<style>
+    #who-we-are{
+        padding: 0.01%;
+        background-color: #002e41;
+        width: 100%;
+        color: white;
+        min-height: calc(100vh - 268px);
+    }
+    #who-we-are-inner{
+        margin-inline: 84px;
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    #who-we-are-inner>*{
+        text-align: left;
+        width: 100%;
+    }
+</style>
+
+<div id="who-we-are">
+    <div id="who-we-are-inner">
+        <h1>
+            {{ page.title | remove: ".md" | remove: ".html" }}
+        </h1>
+        <p>
+            O ABC 360 Notícias foi estabelecido no começo de 2023, com a missão de engajar jovens residentes na Região Metropolitana de São Paulo, fornecendo informações sobre Cultura, Educação, Economia e Política em uma linguagem que ressoe com eles.
+        </p>
+        <p>
+            Nosso objetivo é auxiliar na formação cidadã dos jovens e aspiramos ser reconhecidos por transmitir informações de maneira criativa e responsável. A ética, a transparência, a integridade e a diversidade são pilares de nossos valores. Além disso, valorizamos a criatividade e a inovação.
+        </p>
+    </div>
+</div>
+
+
+

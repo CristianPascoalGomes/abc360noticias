@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    font-size: larger;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", Sans-serif;
+}
+
+a,
+a:visited,
+a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+.fa {
+    font-size: large;
+    width: 20px;
+}
+
+#page {
+    overflow: hidden;
+}
+
+.timestamp {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: small;
+}
+
+#main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(254, 199, 45);
+    max-width: 50%;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+#main-title>img {
+    min-width: 16rem;
+}
+
+#main-title>figcaption {
+    text-wrap: nowrap;
+}
+
+
+
+#middle {
+    margin-inline: 84px;
+    margin-block: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+#latest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#latest-container>h2 {
+    margin-right: 100%;
+    margin-block: 1rem;
+}
+
+.thumb-container {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1.7777777777777777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: black;
+}

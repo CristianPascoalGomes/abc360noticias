@@ -1,0 +1,59 @@
+<style>
+    #navigation {
+        display: flex;
+        background-color: #015F83;
+        height: 66px;
+        align-items: center;
+        justify-content: space-between;
+        /* position: sticky;
+    top: 0; */
+    }
+
+
+    #navigation>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navigation>div>* {
+        padding: 20px;
+    }
+
+    #navigation>div>*:hover {
+        color: rgb(254, 199, 45);
+    }
+
+    #navigation>:first-child {
+        margin-left: 64px;
+    }
+
+    #navigation> :last-child {
+        margin-right: 84px;
+    }
+
+    #nav-right>a {
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #navigation>* {
+        color: white;
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="nav-left">
+        {% for item in site.data.urls %}
+        <a href="{{ item.url }}" {% if page.url==item.url %}style="color: rgb(254, 199, 45);" {% endif %}>
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </div>
+
+    <div id="nav-right">
+        <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+        <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+    </div>
+</nav>

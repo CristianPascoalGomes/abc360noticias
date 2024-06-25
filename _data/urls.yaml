@@ -1,0 +1,6 @@
+- name: Página Inicial
+  url: /
+- name: Quem Somos
+  url: /quem-somos.html
+- name: Nosso Time
+  url: /nosso-time.html

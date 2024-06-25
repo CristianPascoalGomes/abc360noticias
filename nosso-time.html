@@ -1,0 +1,127 @@
+---
+title: Quem somos
+---
+
+<style>
+    #us-title{
+        display: inline;
+        text-align: left;
+    }
+
+    #us-title-icon{
+        width: 4px;
+        background-color: rgb(254, 199, 45);
+        height: 100%;
+        margin-left: calc(100% - 4px);
+        border-radius: 50%;
+    }
+
+    #us{
+        width: 100%;
+        background-color: #002e41;
+        color: white;
+        padding-block: 2rem;
+    }
+    #us-inner{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        padding-block: 2rem;
+        margin-inline: 84px;
+        gap: 8rem;
+    }
+
+    .staff-photo{
+        position: relative;
+    }
+
+    .staff-photo>*{
+        border-radius: 50%;
+        height: 100%;
+        aspect-ratio: 1;
+    }
+
+    .staff-photo-main-container{
+        overflow: hidden;
+        position: relative;
+        left: 0px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .staff-photo-shadow{
+        position: absolute;
+        background-color: rgb(254, 199, 45);
+        left: 16px;
+        top: 16px;
+    }
+
+    .staff-text{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .staff-text>*{
+        text-align: left;
+    }
+
+    .staff-position{
+        margin-bottom: 2rem;
+    }
+    .staff-description{
+
+    }
+
+    
+</style>
+
+<div id="us">
+    <div id="us-title">
+    </div>
+    <div id="us-inner">
+        <div id="us-title-icon">
+            
+        </div>
+        <h1 id="us-title">
+            {{ page.title }}
+        </h1>
+        <div class="staff-photo">
+            <div class="staff-photo-main-container">
+                <img class="staff-photo-main" src="/assets/images/staff/cristian.jpg" alt="Gostosão">
+            </div>
+            <div class="staff-photo-shadow"></div>
+        </div>
+        <div class="staff-text">
+            <h2 class="staff-name">
+                Cristian Pascoal Gomes
+            </h2>
+            <p class="staff-position">
+                Web-designer, Jornalista e Publicador
+            </p>
+            <p class="staff-descripion">
+                Lindo e gostoso.
+            </p>
+        </div>
+        <div class="staff-photo">
+            <div class="staff-photo-main-container">
+                <img class="staff-photo-main" src="/assets/images/staff/joão.jpg" alt="Gostosão">
+            </div>
+            <div class="staff-photo-shadow"></div>
+        </div>
+        <div class="staff-text">
+            <h2 class="staff-name">
+                João Antonio Cardoso
+            </h2>
+            <p class="staff-position">
+                Políticas Públicas, Jornalista e Consultor em Gestão e Publicador
+            </p>
+            <p class="staff-descripion">
+                Jornalista com mais de 10 anos de carreira no Grande ABC paulista!
+            </p>
+        </div>
+    </div>
+</div>

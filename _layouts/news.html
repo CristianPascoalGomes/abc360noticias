@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<style>
+    .columns {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-inline: 84px;
+        margin-block: 2rem;
+        gap: 2rem;
+    }
+    
+    .columns>* {
+        width: 100%;
+    }
+    
+    .news-img-container {
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .news>*{
+        margin-bottom: 2rem;
+    }
+
+    .news>*:last-child{
+        margin-bottom: 0rem;
+    }
+
+    .news * {
+        text-align: left;
+    }
+    
+    .news-info>* {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    .news-info>div>* {
+        display: inline;
+    }
+
+    .news-body>*{
+        margin-bottom: 2rem;
+    }
+
+    .news-body>*:last-child{
+        margin-bottom: 0px;
+    }
+
+</style>
+
+
+
+
+<div class="columns">
+    <div class="news">
+        <div class="news-img-container">
+            <img src="/assets/images/news/{{page.title}}.jpg" alt="">
+        </div>
+        <h1>
+            {{page.name | remove: ".md" | remove: ".html"}} 
+        </h1>
+        <div class="news-info">
+            <div>
+                <p class="fa fa-user-circle-o"></p>
+                <p>
+                    {{page.author}}
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-calendar"></p>
+                <p>
+                    {{ page.date | date_to_long_string }}
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-clock-o"></p>
+                <p>
+                    {{ page.date | date: "%H:%M" }}
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-search"></p>
+                <p>
+                    {{ page.image-source }}
+                </p>
+            </div>
+
+        </div>
+        <div class="news-body">
+            {{ content }}
+        </div>
+    </div>
+    {% include ad-column.html %}
+</div>
