@@ -82,12 +82,12 @@
 
         {% if n.highlight == true %}
         <div class="highlight">
-            <a class="highlight-info" href="{{n.url}}">
-                <h1 class="highlight-title">{{n.name | remove: ".md"}}</h1>
+            <a class="highlight-info" href="{{n.url | relative_url}}">
+                <h1 class="highlight-title">{{ n.name | remove: ".md"}}</h1>
                 <figcaption class="highlight-date">{{ n.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
             </a>
             <div class="highlight-img-container">
-                <img class="highlight-img" src="/assets/images/news/{{n.title}}.jpg">
+                <img class="highlight-img" src="/assets/images/news/{{ n.title | relative_url }}.jpg">
             </div>
         </div>
         {% endif %}

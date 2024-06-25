@@ -3,7 +3,7 @@ title: Principal
 ---
 
 <a id="main-title" href="/">
-    <img src="{{ /assets/images/art/name.png | relative_url }}" alt="ABC 360"">
+    <img src="{{ "/assets/images/art/name.png" | relative_url }}" alt="ABC 360"">
     <figcaption>Por todos os lados, direto para você!</figcaption>
 </a>
 
@@ -18,7 +18,7 @@ title: Principal
             <div id="latest">
                 {% assign articles = site.news | sort: 'date' | reverse %}
                 {% for article in articles limit:12 %}
-                <a id="article" href="{{ article.url  | relative_url }} ">
+                <a id="article" href="{{ article.url }} ">
                     <div class="thumb-container">
                         <img class="thumb" src="assets/images/news/{{article.title}}.jpg" alt="">
                     </div>
