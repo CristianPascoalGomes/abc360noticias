@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ABC 360 Notícias - Quem somos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
+</head>
+
+<body>
+    <style>
+    #navigation {
+        display: flex;
+        background-color: #015F83;
+        height: 66px;
+        align-items: center;
+        justify-content: space-between;
+        /* position: sticky;
+    top: 0; */
+    }
+
+
+    #navigation>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navigation>div>* {
+        padding: 20px;
+    }
+
+    #navigation>div>*:hover {
+        color: rgb(254, 199, 45);
+    }
+
+    #navigation>:first-child {
+        margin-left: 64px;
+    }
+
+    #navigation> :last-child {
+        margin-right: 84px;
+    }
+
+    #nav-right>a {
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #navigation>* {
+        color: white;
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="nav-left">
+        
+        <a href="/" >
+            Página Inicial
+        </a>
+        
+        <a href="/quem-somos.html" >
+            Quem Somos
+        </a>
+        
+        <a href="/nosso-time.html" style="color: rgb(254, 199, 45);" >
+            Nosso Time
+        </a>
+        
+    </div>
+
+    <div id="nav-right">
+        <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+        <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+    </div>
+</nav>
+    <div id="page">
+        <style>
+    #us-title{
+        display: inline;
+        text-align: left;
+    }
+
+    #us-title-icon{
+        width: 4px;
+        background-color: rgb(254, 199, 45);
+        height: 100%;
+        margin-left: calc(100% - 4px);
+        border-radius: 50%;
+    }
+
+    #us{
+        width: 100%;
+        background-color: #002e41;
+        color: white;
+        padding-block: 2rem;
+    }
+    #us-inner{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        padding-block: 2rem;
+        margin-inline: 84px;
+        gap: 8rem;
+    }
+
+    .staff-photo{
+        position: relative;
+    }
+
+    .staff-photo>*{
+        border-radius: 50%;
+        height: 100%;
+        aspect-ratio: 1;
+    }
+
+    .staff-photo-main-container{
+        overflow: hidden;
+        position: relative;
+        left: 0px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .staff-photo-shadow{
+        position: absolute;
+        background-color: rgb(254, 199, 45);
+        left: 16px;
+        top: 16px;
+    }
+
+    .staff-text{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .staff-text>*{
+        text-align: left;
+    }
+
+    .staff-position{
+        margin-bottom: 2rem;
+    }
+    .staff-description{
+
+    }
+
+    
+</style>
+
+<div id="us">
+    <div id="us-title">
+    </div>
+    <div id="us-inner">
+        <div id="us-title-icon">
+            
+        </div>
+        <h1 id="us-title">
+            Quem somos
+        </h1>
+        <div class="staff-photo">
+            <div class="staff-photo-main-container">
+                <img class="staff-photo-main" src="/assets/images/staff/cristian.jpg" alt="Gostosão">
+            </div>
+            <div class="staff-photo-shadow"></div>
+        </div>
+        <div class="staff-text">
+            <h2 class="staff-name">
+                Cristian Pascoal Gomes
+            </h2>
+            <p class="staff-position">
+                Web-designer, Jornalista e Publicador
+            </p>
+            <p class="staff-descripion">
+                Lindo e gostoso.
+            </p>
+        </div>
+        <div class="staff-photo">
+            <div class="staff-photo-main-container">
+                <img class="staff-photo-main" src="/assets/images/staff/joão.jpg" alt="Gostosão">
+            </div>
+            <div class="staff-photo-shadow"></div>
+        </div>
+        <div class="staff-text">
+            <h2 class="staff-name">
+                João Antonio Cardoso
+            </h2>
+            <p class="staff-position">
+                Políticas Públicas, Jornalista e Consultor em Gestão e Publicador
+            </p>
+            <p class="staff-descripion">
+                Jornalista com mais de 10 anos de carreira no Grande ABC paulista!
+            </p>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <style>
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: #015F83;
+        position: static;
+        bottom: 0px;
+        gap: 2rem;
+        font-size: small;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-block: 2rem;
+    }
+
+    .footer-column>h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-column>*>p{
+        display: inline-block;
+    }
+
+    .footer1{
+        align-items: start;
+    }
+
+    .footer2{
+        align-items: end;
+    }
+
+    footer>:first-child {
+        margin-left: 84px;
+    }
+
+    footer>:last-child {
+        margin-right: 84px;
+    }
+</style>
+
+
+<footer>
+    <div class="footer-column footer1">
+        <h3>
+            INSTITUCIONAL
+        </h3>
+        <a href="/">Página Inicial</a>
+        <a href="/quem-somos.html">Quem Somos</a>
+    </div>
+    <div class="footer-column footer2">
+        <h3>
+            FALE CONOSCO
+        </h3>
+        <div>
+            <p> contato@abc360.com.br</p>
+            <p class="fa fa-envelope"></p>
+        </div>
+        <a 	href="https://wa.me/+5511959963937">
+            <p>(11) 95996-3937</p>
+            <p class="fa fa-whatsapp"></p>
+        </a>
+        <a href="https://www.instagram.com/abc360noticias/">
+            <p>@abc360noticias</p>
+            <p class="fa fa-instagram"></p>
+        </a>
+        <a href="https://www.facebook.com/abc360noticias/">
+            <p>@abc360noticias</p>
+            <p class="fa fa-facebook"></p>
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ABC 360 Notícias - Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
+</head>
+
+<body>
+    <style>
+    #navigation {
+        display: flex;
+        background-color: #015F83;
+        height: 66px;
+        align-items: center;
+        justify-content: space-between;
+        /* position: sticky;
+    top: 0; */
+    }
+
+
+    #navigation>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navigation>div>* {
+        padding: 20px;
+    }
+
+    #navigation>div>*:hover {
+        color: rgb(254, 199, 45);
+    }
+
+    #navigation>:first-child {
+        margin-left: 64px;
+    }
+
+    #navigation> :last-child {
+        margin-right: 84px;
+    }
+
+    #nav-right>a {
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #navigation>* {
+        color: white;
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="nav-left">
+        
+        <a href="/" style="color: rgb(254, 199, 45);" >
+            Página Inicial
+        </a>
+        
+        <a href="/quem-somos.html" >
+            Quem Somos
+        </a>
+        
+        <a href="/nosso-time.html" >
+            Nosso Time
+        </a>
+        
+    </div>
+
+    <div id="nav-right">
+        <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+        <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+    </div>
+</nav>
+    <div id="page">
+        <a id="main-title" href="/">
+    <img src="./assets/images/art/name.png" alt="ABC 360"">
+    <figcaption>Por todos os lados, direto para você!</figcaption>
+</a>
+
+<style>
+    .highlights {
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .highlights-inner {
+        width: 200%;
+        display: grid;
+        grid-template-columns: 100% 100% 100% 100%;
+        align-items: center;
+    }
+
+    .highlight {
+        width: 100%;
+        position: relative;
+    }
+
+    .highlight-info {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        text-align: left;
+        color: white;
+        left: 84px;
+        width: calc(50% - 84px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+    }
+
+    .highlight-title {
+        text-align: left;
+        font-size: 57px;
+        font-weight: 700;
+        color: white;
+        max-height: 50%;
+    }
+
+    .highlight-date {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .dot-container {
+        display: inline;
+    }
+
+    .highlights-dots {
+        margin-top: 20px;
+    }
+
+    .highlights-dot {
+        border-radius: 50%;
+        background-color: gray;
+        width: 8px;
+        height: 8px;
+        margin: 2px;
+    }
+
+    .highlights-dot:hover {
+        cursor: pointer;
+    }
+
+    .current-highlight {
+        background-color: black;
+    }
+</style>
+
+<div class="highlights">
+    <div class="highlights-inner">
+        
+
+        
+
+        
+        <div class="highlight">
+            <a class="highlight-info" href="/news/Poss%C3%ADvel%20impeachment%20de%20Lula%20agita%20cen%C3%A1rio%20pol%C3%ADtico%20brasileiro.html">
+                <h1 class="highlight-title">Possível impeachment de Lula agita cenário político brasileiro</h1>
+                <figcaption class="highlight-date">17/06/2024 01:24</figcaption>
+            </a>
+            <div class="highlight-img-container">
+                <img class="highlight-img" src="/assets/images/news/Possível impeachment de lula agita cenário político brasileiro.jpg">
+            </div>
+        </div>
+        
+        
+
+        
+        <div class="highlight">
+            <a class="highlight-info" href="/news/Festa%20Junina%20em%20Mau%C3%A1%20recebe%20Os%20Bar%C3%B5es%20da%20Pisadinha.html">
+                <h1 class="highlight-title">Festa Junina em Mauá recebe Os Barões da Pisadinha</h1>
+                <figcaption class="highlight-date">17/06/2024 01:11</figcaption>
+            </a>
+            <div class="highlight-img-container">
+                <img class="highlight-img" src="/assets/images/news/Festa junina em mauá recebe os barões da pisadinha.jpg">
+            </div>
+        </div>
+        
+        
+
+        
+        <div class="highlight">
+            <a class="highlight-info" href="/news/Projeto%20de%20Lei%201904%20faz%20com%20que%20infantic%C3%ADdio%20tenha%20pena%20menor%20que%20aborto.html">
+                <h1 class="highlight-title">Projeto de Lei 1904 faz com que infanticídio tenha pena menor que aborto</h1>
+                <figcaption class="highlight-date">14/06/2024 13:30</figcaption>
+            </a>
+            <div class="highlight-img-container">
+                <img class="highlight-img" src="/assets/images/news/Projeto de lei 1904 faz com que infanticídio tenha pena menor que aborto.jpg">
+            </div>
+        </div>
+        
+        
+
+        
+        <div class="highlight">
+            <a class="highlight-info" href="/news/Ministro%20Juscelino%20Filho%20indiciado%20por%20desvio%20de%20emendas%20parlamentares.html">
+                <h1 class="highlight-title">Ministro Juscelino Filho indiciado por desvio de emendas parlamentares</h1>
+                <figcaption class="highlight-date">13/06/2024 08:40</figcaption>
+            </a>
+            <div class="highlight-img-container">
+                <img class="highlight-img" src="/assets/images/news/Ministro juscelino filho indiciado por desvio de emendas parlamentares.jpg">
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<div class="highlights-dots">
+    <input id="first-dot" class="highlights-dot" type="button">
+    <input id="secound-dot" class="highlights-dot" type="button">
+    <input id="third-dot" class="highlights-dot" type="button">
+    <input id="fourth-dot" class="highlights-dot" type="button">
+</div>
+
+<script>
+    const intervalAmount = 10000;
+    var currentHighlight = 0;
+    const highlights = document.querySelector(".highlights");
+    const dots = [
+        document.querySelector("#first-dot"),
+        document.querySelector("#secound-dot"),
+        document.querySelector("#third-dot"),
+        document.querySelector("#fourth-dot"),
+    ];
+
+    function scrollTo(highlightNumber) {
+        currentHighlight = highlightNumber;
+        const x = (highlights.scrollWidth / 4) * highlightNumber;
+        const y = (0);
+        const options = {
+            left: x,
+            top: y,
+            behavior: "smooth"
+        }
+
+        highlights.scroll(options);
+        dots.forEach(dot => {
+            dot.classList.remove("current-highlight");
+        });
+        dots[highlightNumber].classList.add("current-highlight");
+    }
+
+    dots[0].addEventListener("click", () => { scrollTo(0); restartHighlightloop();});
+    dots[1].addEventListener("click", () => { scrollTo(1); restartHighlightloop();});
+    dots[2].addEventListener("click", () => { scrollTo(2); restartHighlightloop();});
+    dots[3].addEventListener("click", () => { scrollTo(3); restartHighlightloop();});
+    scrollTo(0);
+
+    function nextHighlight() {
+        scrollTo((currentHighlight + 1) % 4);
+    }
+
+    var timeOutCode;
+    function highlightLoop() {
+        timeOutCode = setTimeout(highlightLoop, intervalAmount);
+        nextHighlight();
+    }
+    function restartHighlightloop(){
+        stopHighlightloop();
+        timeOutCode = setTimeout(highlightLoop, intervalAmount);
+    }
+    function stopHighlightloop(){
+        clearTimeout(timeOutCode);
+    }
+    restartHighlightloop();
+
+    window.addEventListener("resize", () => { scrollTo(currentHighlight) });
+</script>
+
+<div id="middle">
+    <div id="main-column">
+        <div id="latest-container" >
+            <h2>
+                Últimas
+            </h2>
+            <div id="latest">
+                
+                
+                <a id="article" href=" .//news/Poss%C3%ADvel%20impeachment%20de%20Lula%20agita%20cen%C3%A1rio%20pol%C3%ADtico%20brasileiro.html ">
+                    <div class="thumb-container">
+                        <img class="thumb" src="./assets/images/news/Possível impeachment de lula agita cenário político brasileiro.jpg" alt="">
+                    </div>
+                    <figcaption>Possível impeachment de Lula agita cenário político brasileiro</figcaption>
+                    <figcaption class="timestamp">17/06/2024 01:24</figcaption>
+                </a>
+                
+                <a id="article" href=" .//news/Festa%20Junina%20em%20Mau%C3%A1%20recebe%20Os%20Bar%C3%B5es%20da%20Pisadinha.html ">
+                    <div class="thumb-container">
+                        <img class="thumb" src="./assets/images/news/Festa junina em mauá recebe os barões da pisadinha.jpg" alt="">
+                    </div>
+                    <figcaption>Festa Junina em Mauá recebe Os Barões da Pisadinha</figcaption>
+                    <figcaption class="timestamp">17/06/2024 01:11</figcaption>
+                </a>
+                
+                <a id="article" href=" .//news/Projeto%20de%20Lei%201904%20faz%20com%20que%20infantic%C3%ADdio%20tenha%20pena%20menor%20que%20aborto.html ">
+                    <div class="thumb-container">
+                        <img class="thumb" src="./assets/images/news/Projeto de lei 1904 faz com que infanticídio tenha pena menor que aborto.jpg" alt="">
+                    </div>
+                    <figcaption>Projeto de Lei 1904 faz com que infanticídio tenha pena menor que aborto</figcaption>
+                    <figcaption class="timestamp">14/06/2024 13:30</figcaption>
+                </a>
+                
+                <a id="article" href=" .//news/Ministro%20Juscelino%20Filho%20indiciado%20por%20desvio%20de%20emendas%20parlamentares.html ">
+                    <div class="thumb-container">
+                        <img class="thumb" src="./assets/images/news/Ministro juscelino filho indiciado por desvio de emendas parlamentares.jpg" alt="">
+                    </div>
+                    <figcaption>Ministro Juscelino Filho indiciado por desvio de emendas parlamentares</figcaption>
+                    <figcaption class="timestamp">13/06/2024 08:40</figcaption>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <style>
+    
+    #side-column {
+    }
+    .ad{
+        margin-bottom: 2rem;
+        border: -1px solid black;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        background-color: gainsboro;
+    }
+    .ad>img{
+        font-size: xx-large;
+    }
+</style>
+
+
+<div id="side-column">
+    <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+    <a class="ad" id="ad2" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+    <a class="ad" id="ad3" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+    <a class="ad" id="ad4" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+</div>
+</div>
+
+
+    </div>
+    <style>
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        background-color: #015F83;
+        position: static;
+        bottom: 0px;
+        gap: 2rem;
+        font-size: small;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-block: 2rem;
+    }
+
+    .footer-column>h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-column>*>p{
+        display: inline-block;
+    }
+
+    .footer1{
+        align-items: start;
+    }
+
+    .footer2{
+        align-items: end;
+    }
+
+    footer>:first-child {
+        margin-left: 84px;
+    }
+
+    footer>:last-child {
+        margin-right: 84px;
+    }
+</style>
+
+
+<footer>
+    <div class="footer-column footer1">
+        <h3>
+            INSTITUCIONAL
+        </h3>
+        <a href="/">Página Inicial</a>
+        <a href="/quem-somos.html">Quem Somos</a>
+    </div>
+    <div class="footer-column footer2">
+        <h3>
+            FALE CONOSCO
+        </h3>
+        <div>
+            <p> contato@abc360.com.br</p>
+            <p class="fa fa-envelope"></p>
+        </div>
+        <a 	href="https://wa.me/+5511959963937">
+            <p>(11) 95996-3937</p>
+            <p class="fa fa-whatsapp"></p>
+        </a>
+        <a href="https://www.instagram.com/abc360noticias/">
+            <p>@abc360noticias</p>
+            <p class="fa fa-instagram"></p>
+        </a>
+        <a href="https://www.facebook.com/abc360noticias/">
+            <p>@abc360noticias</p>
+            <p class="fa fa-facebook"></p>
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>
