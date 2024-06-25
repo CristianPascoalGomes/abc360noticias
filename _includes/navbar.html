@@ -46,7 +46,7 @@
 <nav id="navigation">
     <div id="nav-left">
         {% for item in site.data.urls %}
-        <a href="./{{ item.url }}" {% if page.url==item.url %}style="color: rgb(254, 199, 45);" {% endif %}>
+        <a href="{{ item.url | relative_url  }}" {% if page.url == item.url %} style="color: rgb(254, 199, 45);" {% endif %}>
             {{ item.name }}
         </a>
         {% endfor %}
