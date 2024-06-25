@@ -18,9 +18,10 @@ title: Principal
             <div id="latest">
                 {% assign articles = site.news | sort: 'date' | reverse %}
                 {% for article in articles limit:12 %}
-                <a id="article" href="{{ article.url }} ">
+                <a id="article" href="{{ article.url | relative_url}} ">
                     <div class="thumb-container">
-                        <img class="thumb" src="assets/images/news/{{article.title}}.jpg" alt="">
+                        {% capture cur_img_url %}assets/images/news/{{article.title}}.jpg{% endcapture %}
+                        <img class="thumb" src="{{cur_img_url | relative_url}}" alt="">
                     </div>
                     <figcaption>{{ article.name | remove: ".md" }}</figcaption>
                     <figcaption class="timestamp">{{ article.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
