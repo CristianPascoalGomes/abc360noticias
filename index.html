@@ -23,7 +23,7 @@ title: Principal
                         {% capture cur_img_url %}assets/images/news/{{article.title}}.jpg{% endcapture %}
                         <img class="thumb" src="{{cur_img_url | relative_url}}" alt="">
                     </div>
-                    <figcaption>{{ article.name | remove: ".md" }}</figcaption>
+                    <figcaption>{{ article.title | remove: ".md" }}</figcaption>
                     <figcaption class="timestamp">{{ article.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
                 </a>
                 {% endfor %}

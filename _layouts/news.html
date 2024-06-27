@@ -63,7 +63,8 @@ layout: default
 <div class="columns">
     <div class="news">
         <div class="news-img-container">
-            <img src="/assets/images/news/{{page.title}}.jpg" alt="">
+            {% capture news_img_url %}assets/images/news/{{page.name}}.jpg{% endcapture %}
+            <img src="{{news_img_url | relative_url}}" alt="">
         </div>
         <h1>
             {{page.name | remove: ".md" | remove: ".html"}} 
