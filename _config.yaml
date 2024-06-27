@@ -17,7 +17,9 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "news"
     values:
-      layout: "news"
+      layout: news
       highlight: false
-      region: "Nacional"
-      author: "Cristian Pascoal Gomes"
+      region: Nacional
+      author: Cristian Pascoal Gomes
+      image-url: /assets/images/art/symbol.png
+      image-source: Internet

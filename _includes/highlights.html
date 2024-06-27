@@ -2,7 +2,7 @@
     .highlights {
         overflow: hidden;
         width: 100%;
-        aspect-ratio: 2;
+        aspect-ratio: 1.8;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,10 +43,12 @@
         font-weight: 700;
         color: white;
         max-height: 50%;
+        text-shadow: 0px 0px 8px black;
     }
 
     .highlight-date {
         color: rgba(255, 255, 255, 0.5);
+        text-shadow: 0px 0px 1px black;
     }
 
     .dot-container {
@@ -83,12 +85,12 @@
         {% if n.highlight == true %}
         <div class="highlight">
             <a class="highlight-info" href="{{n.url | relative_url }}">
-                <h1 class="highlight-title">{{ n.name | remove: ".md"}}</h1>
+                <h1 class="highlight-title">{{ n.title }}</h1>
                 <figcaption class="highlight-date">{{ n.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
             </a>
             <div class="highlight-img-container">
                 {% capture cur_img_url %}/assets/images/news/{{n.title}}.jpg{% endcapture %}
-                <img class="highlight-img" src="{{cur_img_url | relative_url }}">
+                <img class="highlight-img" src="{{ n.image-url | relative_url }}">
             </div>
         </div>
         {% endif %}

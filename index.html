@@ -2,8 +2,8 @@
 title: Principal
 ---
 
-<a id="main-title" href="{{ "/" | relative_url }}">
-    <img src="{{ "/assets/images/art/name.png" | relative_url }}" alt="ABC 360"">
+<a id="main-title" href="{{ " /" | relative_url }}">
+    <img src="{{ " /assets/images/art/name.png" | relative_url }}" alt="ABC 360">
     <figcaption>Por todos os lados, direto para você!</figcaption>
 </a>
 
@@ -11,7 +11,7 @@ title: Principal
 
 <div id="middle">
     <div id="main-column">
-        <div id="latest-container" >
+        <div id="latest-container">
             <h2>
                 Últimas
             </h2>
@@ -20,10 +20,9 @@ title: Principal
                 {% for article in articles limit:12 %}
                 <a id="article" href="{{ article.url | relative_url }} ">
                     <div class="thumb-container">
-                        {% capture cur_img_url %}assets/images/news/{{article.title}}.jpg{% endcapture %}
-                        <img class="thumb" src="{{cur_img_url | relative_url}}" alt="">
+                        <img class="thumb" src="{{article.image-url | relative_url}}" alt="">
                     </div>
-                    <figcaption>{{ article.title | remove: ".md" }}</figcaption>
+                    <figcaption>{{ article.title }}</figcaption>
                     <figcaption class="timestamp">{{ article.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
                 </a>
                 {% endfor %}
@@ -33,4 +32,3 @@ title: Principal
 
     {% include ad-column.html %}
 </div>
-
