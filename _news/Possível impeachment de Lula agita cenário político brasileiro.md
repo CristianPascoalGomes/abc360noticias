@@ -2,6 +2,7 @@
 image-source: G7 Italy
 date: 17/06/2024 01:24
 highlight: true
+title: Possível impeachment de Lula agita cenário político brasileiro
 ---
 
 O presidente Lula enfrenta novas acusações de "pedaladas fiscais", método que consiste em manipular dados econômicos para favorecer o governo. Desta vez, a alteração nos números da Previdência Social teria reduzido a projeção de despesas em R$ 12 bilhões, permitindo a liberação de emendas parlamentares.
