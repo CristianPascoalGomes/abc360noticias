@@ -13,82 +13,188 @@
 <body>
     <style>
     #navigation {
-        display: flex;
+        width: 100%;
         background-color: #015F83;
-        height: 66px;
-        align-items: center;
-        justify-content: space-between;
-        /* position: sticky;
-    top: 0; */
+        color: white;
     }
 
+    #navigation a {
+        padding: 16px;
+        /* border: 1px solid white; */
+    }
 
-    #navigation>div {
+    #navigation-inner>* {
         display: flex;
+        margin-inline: var(--space);
+    }
+
+    #nav-top {
         justify-content: space-between;
+        align-items: center;
     }
 
-    #navigation>div>* {
-        padding: 20px;
+
+    #drop-down-button {
+        padding: 16px;
     }
 
-    #navigation>div>*:hover {
-        color: rgb(254, 199, 45);
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
     }
 
-    #navigation>:first-child {
-        margin-left: 64px;
+    #drop-down-hidden{
+        display: none;
     }
 
-    #navigation> :last-child {
-        margin-right: 84px;
-    }
-
-    #nav-right>a {
+    #nav-right a {
         font-size: larger;
         text-align: center;
         text-decoration: none;
     }
 
-    #navigation>* {
-        color: white;
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
     }
 </style>
 
 
 <nav id="navigation">
-    <div id="nav-left">
-        
-        <a href="/abc360noticias/"  style="color: rgb(254, 199, 45);" >
-            Página Inicial
-        </a>
-        
-        <a href="/abc360noticias/quem-somos.html" >
-            Quem Somos
-        </a>
-        
-        <a href="/abc360noticias/nosso-time.html" >
-            Nosso Time
-        </a>
-        
-    </div>
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
 
-    <div id="nav-right">
-        <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
-        <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </a>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            
+            <a href="/abc360noticias/"  style="color: rgb(254, 199, 45);" >
+                Página Inicial
+            </a>
+            
+            <a href="/abc360noticias/quem-somos.html" >
+                Quem Somos
+            </a>
+            
+            <a href="/abc360noticias/nosso-time.html" >
+                Nosso Time
+            </a>
+            
+        </div>
     </div>
 </nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>
     <div id="page">
-        <a id="main-title" href="/abc360noticias/">
-    <img src="/abc360noticias/assets/images/art/name.png" alt="ABC 360">
-    <figcaption>Por todos os lados, direto para você!</figcaption>
+        <style>
+    #page {
+        overflow: hidden;
+    }
+
+    .timestamp {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: small;
+    }
+
+    #main-title {
+        width: 100%;
+        margin-block: 2rem;
+    }
+
+    #main-title-inner {
+        margin-inline: var(--space);
+        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(254, 199, 45);
+
+    }
+
+    #main-title-inner>img {
+        
+    }
+
+    #main-title-inner>figcaption {
+        text-wrap: nowrap;
+    }
+
+
+
+    #middle {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #latest {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #latest-news *{
+        text-align: left;
+    }
+
+    #latest-title {
+        margin-inline: var(--space);
+        padding: var(--padding-size);
+    }
+    
+    .article>*{
+        margin-inline: var(--space);
+        padding-inline: 16px;
+    }
+
+    .thumb-container {
+        margin-inline: 0px;
+        padding: 0px;
+
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        background-color: black;
+    }
+
+
+</style>
+
+<a id="main-title" href="/abc360noticias/">
+    <div id="main-title-inner">
+        <img src="/abc360noticias/%20/assets/images/art/name.png" alt="ABC 360">
+        <figcaption>Por todos os lados, direto para você!</figcaption>
+    </div>
 </a>
 
 <style>
     .highlights {
         overflow: hidden;
         width: 100%;
-        aspect-ratio: 1.8;
+        aspect-ratio: 1.6;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -114,8 +220,9 @@
 
         text-align: left;
         color: white;
-        left: 84px;
-        width: calc(50% - 84px);
+        left: var(--space);
+        width: 50%;
+        padding: 16px;
 
         display: flex;
         flex-direction: column;
@@ -125,7 +232,7 @@
 
     .highlight-title {
         text-align: left;
-        font-size: 57px;
+        font-size: 16px;
         font-weight: 700;
         color: white;
         max-height: 50%;
@@ -135,6 +242,7 @@
     .highlight-date {
         color: rgba(255, 255, 255, 0.5);
         text-shadow: 0px 0px 1px black;
+        font-size: 12px;
     }
 
     .dot-container {
@@ -142,7 +250,7 @@
     }
 
     .highlights-dots {
-        margin-top: 20px;
+        margin-top: 16px;
     }
 
     .highlights-dot {
@@ -170,6 +278,34 @@
 
         
         <div class="highlight">
+            <a class="highlight-info" href="/abc360noticias/news/Santo%20Andr%C3%A9%20inicia%20obras%20contra%20enchentes%20na%20Vila%20Am%C3%A9rica.html">
+                <h1 class="highlight-title">Santo André inicia obras contra enchentes na Vila América</h1>
+                <figcaption class="highlight-date">28/06/2024 11:50</figcaption>
+            </a>
+            <div class="highlight-img-container">
+                
+                <img class="highlight-img" src="/abc360noticias/assets/images/news/Assinatura%20ordem%20de%20servi%C3%A7o%20obras%20de%20drenagem%20Vila%20Am%C3%A9rica%20-%20Foto%20-Alex%20Cavanha_PSA%20(3).jpeg">
+            </div>
+        </div>
+        
+        
+
+        
+        <div class="highlight">
+            <a class="highlight-info" href="/abc360noticias/news/Representantes%20do%20Solidariedade%20do%20Grande%20ABC%20se%20re%C3%BAnem%20com%20Paulinho%20da%20For%C3%A7a.html">
+                <h1 class="highlight-title">Representantes do Solidariedade do Grande ABC se reúnem com Paulinho da Força</h1>
+                <figcaption class="highlight-date">27/06/2024 19:36</figcaption>
+            </a>
+            <div class="highlight-img-container">
+                
+                <img class="highlight-img" src="/abc360noticias/assets/images/news/solidariedade.jpg">
+            </div>
+        </div>
+        
+        
+
+        
+        <div class="highlight">
             <a class="highlight-info" href="/abc360noticias/news/CEOS%20da%20Americanas%20ficam%20foragidos.html">
                 <h1 class="highlight-title">Ex-CEO das Lojas Americanas vira foragido por fraude de R$ 25 bilhões</h1>
                 <figcaption class="highlight-date">27/06/2024 10:33</figcaption>
@@ -191,34 +327,6 @@
             <div class="highlight-img-container">
                 
                 <img class="highlight-img" src="/abc360noticias/assets/images/news/951436-ato%20defesa.webp">
-            </div>
-        </div>
-        
-        
-
-        
-        <div class="highlight">
-            <a class="highlight-info" href="/abc360noticias/news/Protesto%20da%20UFABC%20na%20camara%20de%20Santo%20Andr%C3%A9.html">
-                <h1 class="highlight-title">Câmara de Santo André encerra sessão após protesto da UFABC</h1>
-                <figcaption class="highlight-date">26/06/2024 11:00</figcaption>
-            </a>
-            <div class="highlight-img-container">
-                
-                <img class="highlight-img" src="/abc360noticias/assets/images/news/vlcsnap-2024-06-26-11h21m14s571.jpg">
-            </div>
-        </div>
-        
-        
-
-        
-        <div class="highlight">
-            <a class="highlight-info" href="/abc360noticias/news/Lula%20critica%20STF.html">
-                <h1 class="highlight-title">Lula critica STF por decisão sobre descriminalização da maconha</h1>
-                <figcaption class="highlight-date">26/06/2024 09:00</figcaption>
-            </a>
-            <div class="highlight-img-container">
-                
-                <img class="highlight-img" src="/abc360noticias/assets/images/news/tse_diplomacao_lula_alckimin_202212121226.jpg">
             </div>
         </div>
         
@@ -289,51 +397,76 @@
 </script>
 
 <div id="middle">
-    <div id="main-column">
-        <div id="latest-container">
-            <h2>
-                Últimas
-            </h2>
-            <div id="latest">
-                
-                
-                <a id="article" href="/abc360noticias/news/CEOS%20da%20Americanas%20ficam%20foragidos.html ">
-                    <div class="thumb-container">
-                        <img class="thumb" src="/abc360noticias/assets/images/news/Lojas-Americanas-e1620946213391.png" alt="">
-                    </div>
-                    <figcaption>Ex-CEO das Lojas Americanas vira foragido por fraude de R$ 25 bilhões</figcaption>
-                    <figcaption class="timestamp">27/06/2024 10:33</figcaption>
-                </a>
-                
-                <a id="article" href="/abc360noticias/news/PT%20corta%20verba%20de%20causas%20sociais.html ">
-                    <div class="thumb-container">
-                        <img class="thumb" src="/abc360noticias/assets/images/news/951436-ato%20defesa.webp" alt="">
-                    </div>
-                    <figcaption>PT reduz verba para movimentos sociais e gera insatisfação</figcaption>
-                    <figcaption class="timestamp">26/06/2024 20:00</figcaption>
-                </a>
-                
-                <a id="article" href="/abc360noticias/news/Protesto%20da%20UFABC%20na%20camara%20de%20Santo%20Andr%C3%A9.html ">
-                    <div class="thumb-container">
-                        <img class="thumb" src="/abc360noticias/assets/images/news/vlcsnap-2024-06-26-11h21m14s571.jpg" alt="">
-                    </div>
-                    <figcaption>Câmara de Santo André encerra sessão após protesto da UFABC</figcaption>
-                    <figcaption class="timestamp">26/06/2024 11:00</figcaption>
-                </a>
-                
-                <a id="article" href="/abc360noticias/news/Lula%20critica%20STF.html ">
-                    <div class="thumb-container">
-                        <img class="thumb" src="/abc360noticias/assets/images/news/tse_diplomacao_lula_alckimin_202212121226.jpg" alt="">
-                    </div>
-                    <figcaption>Lula critica STF por decisão sobre descriminalização da maconha</figcaption>
-                    <figcaption class="timestamp">26/06/2024 09:00</figcaption>
-                </a>
-                
+    <div id="middle-inner">
+        <div id="latest-news">
+            <div id="latest-inner">
+                <h2 id="latest-title">
+                    Últimas
+                </h2>
+                <div id="latest">
+                    
+                    
+                    <a class="article" href="/abc360noticias/news/Ex-diretores%20da%20Americanas%20venderam%20a%C3%A7%C3%B5es%20antes%20de%20esc%C3%A2ndalo%20financeiro.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/americanas-amer3-fachada-de-loja_020120233949.jpg" alt="">
+                        </div>
+                        <figcaption>Ex-diretores da Americanas venderam ações antes de escândalo financeiro</figcaption>
+                        <figcaption class="timestamp">28/06/2024 12:58</figcaption>
+                    </a>
+                    
+                    <a class="article" href="/abc360noticias/news/Santo%20Andr%C3%A9%20inicia%20obras%20contra%20enchentes%20na%20Vila%20Am%C3%A9rica.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/Assinatura%20ordem%20de%20servi%C3%A7o%20obras%20de%20drenagem%20Vila%20Am%C3%A9rica%20-%20Foto%20-Alex%20Cavanha_PSA%20(3).jpeg" alt="">
+                        </div>
+                        <figcaption>Santo André inicia obras contra enchentes na Vila América</figcaption>
+                        <figcaption class="timestamp">28/06/2024 11:50</figcaption>
+                    </a>
+                    
+                    <a class="article" href="/abc360noticias/news/Representantes%20do%20Solidariedade%20do%20Grande%20ABC%20se%20re%C3%BAnem%20com%20Paulinho%20da%20For%C3%A7a.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/solidariedade.jpg" alt="">
+                        </div>
+                        <figcaption>Representantes do Solidariedade do Grande ABC se reúnem com Paulinho da Força</figcaption>
+                        <figcaption class="timestamp">27/06/2024 19:36</figcaption>
+                    </a>
+                    
+                    <a class="article" href="/abc360noticias/news/CEOS%20da%20Americanas%20ficam%20foragidos.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/Lojas-Americanas-e1620946213391.png" alt="">
+                        </div>
+                        <figcaption>Ex-CEO das Lojas Americanas vira foragido por fraude de R$ 25 bilhões</figcaption>
+                        <figcaption class="timestamp">27/06/2024 10:33</figcaption>
+                    </a>
+                    
+                    <a class="article" href="/abc360noticias/news/PT%20corta%20verba%20de%20causas%20sociais.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/951436-ato%20defesa.webp" alt="">
+                        </div>
+                        <figcaption>PT reduz verba para movimentos sociais e gera insatisfação</figcaption>
+                        <figcaption class="timestamp">26/06/2024 20:00</figcaption>
+                    </a>
+                    
+                    <a class="article" href="/abc360noticias/news/Protesto%20da%20UFABC%20na%20camara%20de%20Santo%20Andr%C3%A9.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/vlcsnap-2024-06-26-11h21m14s571.jpg" alt="">
+                        </div>
+                        <figcaption>Câmara de Santo André encerra sessão após protesto da UFABC</figcaption>
+                        <figcaption class="timestamp">26/06/2024 11:00</figcaption>
+                    </a>
+                    
+                    <a class="article" href="/abc360noticias/news/Lula%20critica%20STF.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/tse_diplomacao_lula_alckimin_202212121226.jpg" alt="">
+                        </div>
+                        <figcaption>Lula critica STF por decisão sobre descriminalização da maconha</figcaption>
+                        <figcaption class="timestamp">26/06/2024 09:00</figcaption>
+                    </a>
+                    
+                </div>
             </div>
         </div>
-    </div>
 
-    <style>
+        <style>
     
     #side-column {
     }
@@ -365,83 +498,72 @@
         <img src="" alt="Divulgue aqui">
     </a>
 </div>
+    </div>
 </div>
     </div>
     <style>
-    footer {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        color: white;
+    footer{
         background-color: #015F83;
-        position: static;
-        bottom: 0px;
-        gap: 2rem;
+        color: white;
         font-size: small;
+        display: flex; /* fix colapsing margins */
     }
 
-    .footer-column {
+    #footer-inner {
+        width: 100%;
+        margin: var(--space);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-column{
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        margin-block: 2rem;
     }
 
-    .footer-column>h3 {
-        margin-bottom: 1rem;
+    .footer-column>*{
+        padding: 16px;
     }
-
-    .footer-column>*>p{
-        display: inline-block;
-    }
-
-    .footer1{
-        align-items: start;
-    }
-
-    .footer2{
-        align-items: end;
-    }
-
-    footer>:first-child {
-        margin-left: 84px;
-    }
-
-    footer>:last-child {
-        margin-right: 84px;
+    
+    .contact>*{
+        display: inline;
     }
 </style>
 
 
 <footer>
-    <div class="footer-column footer1">
-        <h3>
-            INSTITUCIONAL
-        </h3>
-        <a href="/abc360noticias/">Página Inicial</a>
-        <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
-        <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
-    </div>
-    <div class="footer-column footer2">
-        <h3>
-            FALE CONOSCO
-        </h3>
-        <div>
-            <p> contato@abc360.com.br</p>
-            <p class="fa fa-envelope"></p>
+    <div id="footer-inner">
+        <div class="footer-column" id="footer1">
+            <h3>
+                INSTITUCIONAL
+            </h3>
+            <a href="/abc360noticias/">Página Inicial</a>
+            <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
+            <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
         </div>
-        <a 	href="https://wa.me/+5511959963937">
-            <p>(11) 95996-3937</p>
-            <p class="fa fa-whatsapp"></p>
-        </a>
-        <a href="https://www.instagram.com/abc360noticias/">
-            <p>@abc360noticias</p>
-            <p class="fa fa-instagram"></p>
-        </a>
-        <a href="https://www.facebook.com/abc360noticias/">
-            <p>@abc360noticias</p>
-            <p class="fa fa-facebook"></p>
-        </a>
+        <div class="footer-column" id="footer2">
+            <h3>
+                FALE CONOSCO
+            </h3>
+            <div class="contact">
+                <p> contato@abc360.com.br</p>
+                <p class="fa fa-envelope"></p>
+            </div>
+            <a href="https://wa.me/+5511959963937" class="contact">
+                <p>(11) 95996-3937</p>
+                <p class="fa fa-whatsapp"></p>
+            </a>
+            <a href="https://www.instagram.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-instagram"></p>
+            </a>
+            <a href="https://www.facebook.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-facebook"></p>
+            </a>
+        </div>
     </div>
 </footer>
 </body>

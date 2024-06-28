@@ -13,71 +13,95 @@
 <body>
     <style>
     #navigation {
-        display: flex;
+        width: 100%;
         background-color: #015F83;
-        height: 66px;
-        align-items: center;
-        justify-content: space-between;
-        /* position: sticky;
-    top: 0; */
+        color: white;
     }
 
+    #navigation a {
+        padding: 16px;
+        /* border: 1px solid white; */
+    }
 
-    #navigation>div {
+    #navigation-inner>* {
         display: flex;
+        margin-inline: var(--space);
+    }
+
+    #nav-top {
         justify-content: space-between;
+        align-items: center;
     }
 
-    #navigation>div>* {
-        padding: 20px;
+
+    #drop-down-button {
+        padding: 16px;
     }
 
-    #navigation>div>*:hover {
-        color: rgb(254, 199, 45);
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
     }
 
-    #navigation>:first-child {
-        margin-left: 64px;
+    #drop-down-hidden{
+        display: none;
     }
 
-    #navigation> :last-child {
-        margin-right: 84px;
-    }
-
-    #nav-right>a {
+    #nav-right a {
         font-size: larger;
         text-align: center;
         text-decoration: none;
     }
 
-    #navigation>* {
-        color: white;
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
     }
 </style>
 
 
 <nav id="navigation">
-    <div id="nav-left">
-        
-        <a href="/abc360noticias/" >
-            Página Inicial
-        </a>
-        
-        <a href="/abc360noticias/quem-somos.html" >
-            Quem Somos
-        </a>
-        
-        <a href="/abc360noticias/nosso-time.html"  style="color: rgb(254, 199, 45);" >
-            Nosso Time
-        </a>
-        
-    </div>
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
 
-    <div id="nav-right">
-        <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
-        <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </a>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            
+            <a href="/abc360noticias/" >
+                Página Inicial
+            </a>
+            
+            <a href="/abc360noticias/quem-somos.html" >
+                Quem Somos
+            </a>
+            
+            <a href="/abc360noticias/nosso-time.html"  style="color: rgb(254, 199, 45);" >
+                Nosso Time
+            </a>
+            
+        </div>
     </div>
 </nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>
     <div id="page">
         <style>
     #us-title{
@@ -86,6 +110,7 @@
     }
 
     #us-title-icon{
+        height: 16px;
         width: 4px;
         background-color: rgb(254, 199, 45);
         height: 100%;
@@ -101,10 +126,10 @@
     }
     #us-inner{
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr;
         align-items: center;
-        padding-block: 2rem;
-        margin-inline: 84px;
+        padding: var(--padding-size);
+        margin: var(--space);
         gap: 8rem;
     }
 
@@ -125,6 +150,7 @@
         z-index: 1;
         display: flex;
         align-items: center;
+        width: calc(100% - 16px)
     }
 
     .staff-photo-shadow{
@@ -157,8 +183,6 @@
 </style>
 
 <div id="us">
-    <div id="us-title">
-    </div>
     <div id="us-inner">
         <div id="us-title-icon">
             
@@ -205,80 +229,68 @@
 
     </div>
     <style>
-    footer {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        color: white;
+    footer{
         background-color: #015F83;
-        position: static;
-        bottom: 0px;
-        gap: 2rem;
+        color: white;
         font-size: small;
+        display: flex; /* fix colapsing margins */
     }
 
-    .footer-column {
+    #footer-inner {
+        width: 100%;
+        margin: var(--space);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-column{
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        margin-block: 2rem;
     }
 
-    .footer-column>h3 {
-        margin-bottom: 1rem;
+    .footer-column>*{
+        padding: 16px;
     }
-
-    .footer-column>*>p{
-        display: inline-block;
-    }
-
-    .footer1{
-        align-items: start;
-    }
-
-    .footer2{
-        align-items: end;
-    }
-
-    footer>:first-child {
-        margin-left: 84px;
-    }
-
-    footer>:last-child {
-        margin-right: 84px;
+    
+    .contact>*{
+        display: inline;
     }
 </style>
 
 
 <footer>
-    <div class="footer-column footer1">
-        <h3>
-            INSTITUCIONAL
-        </h3>
-        <a href="/abc360noticias/">Página Inicial</a>
-        <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
-        <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
-    </div>
-    <div class="footer-column footer2">
-        <h3>
-            FALE CONOSCO
-        </h3>
-        <div>
-            <p> contato@abc360.com.br</p>
-            <p class="fa fa-envelope"></p>
+    <div id="footer-inner">
+        <div class="footer-column" id="footer1">
+            <h3>
+                INSTITUCIONAL
+            </h3>
+            <a href="/abc360noticias/">Página Inicial</a>
+            <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
+            <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
         </div>
-        <a 	href="https://wa.me/+5511959963937">
-            <p>(11) 95996-3937</p>
-            <p class="fa fa-whatsapp"></p>
-        </a>
-        <a href="https://www.instagram.com/abc360noticias/">
-            <p>@abc360noticias</p>
-            <p class="fa fa-instagram"></p>
-        </a>
-        <a href="https://www.facebook.com/abc360noticias/">
-            <p>@abc360noticias</p>
-            <p class="fa fa-facebook"></p>
-        </a>
+        <div class="footer-column" id="footer2">
+            <h3>
+                FALE CONOSCO
+            </h3>
+            <div class="contact">
+                <p> contato@abc360.com.br</p>
+                <p class="fa fa-envelope"></p>
+            </div>
+            <a href="https://wa.me/+5511959963937" class="contact">
+                <p>(11) 95996-3937</p>
+                <p class="fa fa-whatsapp"></p>
+            </a>
+            <a href="https://www.instagram.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-instagram"></p>
+            </a>
+            <a href="https://www.facebook.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-facebook"></p>
+            </a>
+        </div>
     </div>
 </footer>
 </body>

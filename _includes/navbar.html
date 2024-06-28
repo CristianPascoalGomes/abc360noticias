@@ -1,59 +1,84 @@
 <style>
     #navigation {
-        display: flex;
+        width: 100%;
         background-color: #015F83;
-        height: 66px;
-        align-items: center;
-        justify-content: space-between;
-        /* position: sticky;
-    top: 0; */
+        color: white;
     }
 
+    #navigation a {
+        padding: 16px;
+        /* border: 1px solid white; */
+    }
 
-    #navigation>div {
+    #navigation-inner>* {
         display: flex;
+        margin-inline: var(--space);
+    }
+
+    #nav-top {
         justify-content: space-between;
+        align-items: center;
     }
 
-    #navigation>div>* {
-        padding: 20px;
+
+    #drop-down-button {
+        padding: 16px;
     }
 
-    #navigation>div>*:hover {
-        color: rgb(254, 199, 45);
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
     }
 
-    #navigation>:first-child {
-        margin-left: 64px;
+    #drop-down-hidden{
+        display: none;
     }
 
-    #navigation> :last-child {
-        margin-right: 84px;
-    }
-
-    #nav-right>a {
+    #nav-right a {
         font-size: larger;
         text-align: center;
         text-decoration: none;
     }
 
-    #navigation>* {
-        color: white;
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
     }
 </style>
 
 
 <nav id="navigation">
-    <div id="nav-left">
-        {% for item in site.data.urls %}
-        <a href="{{ item.url | relative_url  }}" {% if page.url == item.url %} style="color: rgb(254, 199, 45);" {% endif %}>
-            {{ item.name }}
-        </a>
-        {% endfor %}
-    </div>
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
 
-    <div id="nav-right">
-        <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
-        <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </a>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            {% for item in site.data.urls %}
+            <a href="{{ item.url | relative_url  }}" {% if page.url==item.url %} style="color: rgb(254, 199, 45);" {%
+                endif %}>
+                {{ item.name }}
+            </a>
+            {% endfor %}
+        </div>
     </div>
 </nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>

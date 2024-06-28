@@ -3,19 +3,22 @@ layout: default
 ---
 
 <style>
-    .columns {
+    #columns {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin-inline: 84px;
-        margin-block: 2rem;
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
-    .columns>* {
-        width: 100%;
+
+    #news *{
+        text-align: left;
     }
-    
-    .news-img-container {
+
+    #news > *{
+        margin-inline: var(--space);
+        padding: var(--padding-size);
+    }
+
+    #news-img-container {
         width: 100%;
         aspect-ratio: 16/9;
         overflow: hidden;
@@ -24,51 +27,33 @@ layout: default
         align-items: center;
         justify-content: center;
         align-content: center;
+        
+        margin: 0px;    /* ovveride */
+        padding: 0px;    /* ovveride */
     }
 
-    .news>*{
-        margin-bottom: 2rem;
-    }
-
-    .news>*:last-child{
-        margin-bottom: 0rem;
-    }
-
-    .news * {
-        text-align: left;
-    }
-    
-    .news-info>* {
-        display: inline;
-        margin-right: 1rem;
-    }
-
-    .news-info>div>* {
+    #news-info>*>*{
         display: inline;
     }
 
-    .news-body>*{
-        margin-bottom: 2rem;
+    #news-body{
+        display: grid;
+        gap: 1.5rem;
     }
-
-    .news-body>*:last-child{
-        margin-bottom: 0px;
-    }
-
 </style>
 
 
 
 
-<div class="columns">
-    <div class="news">
-        <div class="news-img-container">
+<div id="columns">
+    <div id="news">
+        <div id="news-img-container">
             <img src="{{page.image-url | relative_url}}" alt="">
         </div>
         <h1>
-            {{page.title}} 
+            {{page.title}}
         </h1>
-        <div class="news-info">
+        <div id="news-info">
             <div>
                 <p class="fa fa-user-circle-o"></p>
                 <p>
@@ -95,7 +80,7 @@ layout: default
             </div>
 
         </div>
-        <div class="news-body">
+        <div id="news-body">
             {{ content }}
         </div>
     </div>

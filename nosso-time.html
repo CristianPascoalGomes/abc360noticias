@@ -9,6 +9,7 @@ title: Quem somos
     }
 
     #us-title-icon{
+        height: 16px;
         width: 4px;
         background-color: rgb(254, 199, 45);
         height: 100%;
@@ -24,10 +25,10 @@ title: Quem somos
     }
     #us-inner{
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr;
         align-items: center;
-        padding-block: 2rem;
-        margin-inline: 84px;
+        padding: var(--padding-size);
+        margin: var(--space);
         gap: 8rem;
     }
 
@@ -48,6 +49,7 @@ title: Quem somos
         z-index: 1;
         display: flex;
         align-items: center;
+        width: calc(100% - 16px)
     }
 
     .staff-photo-shadow{
@@ -80,8 +82,6 @@ title: Quem somos
 </style>
 
 <div id="us">
-    <div id="us-title">
-    </div>
     <div id="us-inner">
         <div id="us-title-icon">
             

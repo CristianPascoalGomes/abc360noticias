@@ -2,33 +2,117 @@
 title: Principal
 ---
 
+<style>
+    #page {
+        overflow: hidden;
+    }
+
+    .timestamp {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: small;
+    }
+
+    #main-title {
+        width: 100%;
+        margin-block: 2rem;
+    }
+
+    #main-title-inner {
+        margin-inline: var(--space);
+        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(254, 199, 45);
+
+    }
+
+    #main-title-inner>img {
+        
+    }
+
+    #main-title-inner>figcaption {
+        text-wrap: nowrap;
+    }
+
+
+
+    #middle {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #latest {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #latest-news *{
+        text-align: left;
+    }
+
+    #latest-title {
+        margin-inline: var(--space);
+        padding: var(--padding-size);
+    }
+    
+    .article>*{
+        margin-inline: var(--space);
+        padding-inline: 16px;
+    }
+
+    .thumb-container {
+        margin-inline: 0px;
+        padding: 0px;
+
+        overflow: hidden;
+        width: 100%;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        background-color: black;
+    }
+
+
+</style>
+
 <a id="main-title" href="{{ "/" | relative_url }}">
-    <img src="{{ "/assets/images/art/name.png" | relative_url }}" alt="ABC 360">
-    <figcaption>Por todos os lados, direto para você!</figcaption>
+    <div id="main-title-inner">
+        <img src="{{ " /assets/images/art/name.png" | relative_url }}" alt="ABC 360">
+        <figcaption>Por todos os lados, direto para você!</figcaption>
+    </div>
 </a>
 
 {% include highlights.html %}
 
 <div id="middle">
-    <div id="main-column">
-        <div id="latest-container">
-            <h2>
-                Últimas
-            </h2>
-            <div id="latest">
-                {% assign articles = site.news | sort: 'date' | reverse %}
-                {% for article in articles limit:12 %}
-                <a id="article" href="{{ article.url | relative_url }} ">
-                    <div class="thumb-container">
-                        <img class="thumb" src="{{article.image-url | relative_url}}" alt="">
-                    </div>
-                    <figcaption>{{ article.title }}</figcaption>
-                    <figcaption class="timestamp">{{ article.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
-                </a>
-                {% endfor %}
+    <div id="middle-inner">
+        <div id="latest-news">
+            <div id="latest-inner">
+                <h2 id="latest-title">
+                    Últimas
+                </h2>
+                <div id="latest">
+                    {% assign articles = site.news | sort: 'date' | reverse %}
+                    {% for article in articles limit:12 %}
+                    <a class="article" href="{{ article.url | relative_url }} ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="{{article.image-url | relative_url}}" alt="">
+                        </div>
+                        <figcaption>{{ article.title }}</figcaption>
+                        <figcaption class="timestamp">{{ article.date | date: "%d/%m/%Y %H:%M" }}</figcaption>
+                    </a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
 
-    {% include ad-column.html %}
+        {% include ad-column.html %}
+    </div>
 </div>
