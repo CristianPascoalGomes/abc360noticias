@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ABC 360 Notícias - Diadema inaugura novo Restaurante Popular no Jardim Marilene</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/abc360noticias/assets/css/default.css">
+</head>
+
+<body>
+    <style>
+    #navigation {
+        width: 100%;
+        background-color: #015F83;
+        color: white;
+    }
+
+    #navigation a {
+        padding: 16px;
+        /* border: 1px solid white; */
+    }
+
+    #navigation-inner>* {
+        display: flex;
+        margin-inline: var(--space);
+    }
+
+    #nav-top {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    #drop-down-button {
+        padding: 16px;
+    }
+
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #drop-down-hidden{
+        display: none;
+    }
+
+    #nav-right a {
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
+
+            </a>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            
+            <a href="/abc360noticias/" >
+                Página Inicial
+            </a>
+            
+            <a href="/abc360noticias/quem-somos.html" >
+                Quem Somos
+            </a>
+            
+            <a href="/abc360noticias/nosso-time.html" >
+                Nosso Time
+            </a>
+            
+        </div>
+    </div>
+</nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>
+    <div id="page">
+        <style>
+    #columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #news *{
+        text-align: left;
+    }
+
+    #news > *{
+        margin-inline: var(--space);
+        padding: var(--padding-size);
+    }
+
+    #news-img-container {
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+        margin: 0px;    /* ovveride */
+        padding: 0px;    /* ovveride */
+    }
+
+    #news-info>*>*{
+        display: inline;
+    }
+
+    #news-body{
+        display: grid;
+        gap: 1.5rem;
+    }
+</style>
+
+
+
+
+<div id="columns">
+    <div id="news">
+        <div id="news-img-container">
+            <img src="/abc360noticias/assets/images/news/Card%C3%A1pio%20do%20dia%20-Foto%20Dino%20Santos.jpg" alt="">
+        </div>
+        <h1>
+            Diadema inaugura novo Restaurante Popular no Jardim Marilene
+        </h1>
+        <div id="news-info">
+            <div>
+                <p class="fa fa-user-circle-o"></p>
+                <p>
+                    Cristian Pascoal Gomes
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-calendar"></p>
+                <p>
+                    29 June 2024
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-clock-o"></p>
+                <p>
+                    12:15
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-search"></p>
+                <p>
+                    Prefeitura DIadema / Dino Santos
+                </p>
+            </div>
+
+        </div>
+        <div id="news-body">
+            <p>Hoje, 28/6, às 10h, a Prefeitura de Diadema inaugurou o Restaurante Popular Jardim Marilene, na Avenida Alberto Jafet, 709. A nova unidade serve 800 refeições diárias a R$ 2,00, de segunda a sexta, das 10h às 13h30.</p>
+
+<p>Este é o terceiro restaurante municipal da cidade, somando-se aos do Campanário, Serraria e Bom Prato Eldorado. Juntos, eles fornecem 4.700 refeições por dia. A inauguração contou com moradores como Priscila da Silva e Maria de Lourdes, que elogiaram a qualidade e o preço acessível.</p>
+
+<p>O prefeito José de Filippi Júnior destacou a importância do restaurante para a segurança alimentar e a convivência comunitária. A secretária Luci Uliana ressaltou que a nova unidade atende a uma demanda antiga da população. Além disso, o local contará com uma cozinha didática para cursos e workshops.</p>
+
+        </div>
+    </div>
+    <style>
+    
+    #side-column {
+    }
+    .ad{
+        margin-bottom: 2rem;
+        border: -1px solid black;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        background-color: gainsboro;
+    }
+    .ad>img{
+        font-size: xx-large;
+    }
+</style>
+
+
+<div id="side-column">
+    <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+    <a class="ad" id="ad2" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+    <a class="ad" id="ad3" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+    <a class="ad" id="ad4" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+</div>
+</div>
+    </div>
+    <style>
+    footer{
+        background-color: #015F83;
+        color: white;
+        font-size: small;
+        display: flex; /* fix colapsing margins */
+    }
+
+    #footer-inner {
+        width: 100%;
+        margin: var(--space);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column>*{
+        padding: 16px;
+    }
+    
+    .contact>*{
+        display: inline;
+    }
+</style>
+
+
+<footer>
+    <div id="footer-inner">
+        <div class="footer-column" id="footer1">
+            <h3>
+                INSTITUCIONAL
+            </h3>
+            <a href="/abc360noticias/">Página Inicial</a>
+            <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
+            <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
+        </div>
+        <div class="footer-column" id="footer2">
+            <h3>
+                FALE CONOSCO
+            </h3>
+            <div class="contact">
+                <p> contato@abc360.com.br</p>
+                <p class="fa fa-envelope"></p>
+            </div>
+            <a href="https://wa.me/+5511959963937" class="contact">
+                <p>(11) 95996-3937</p>
+                <p class="fa fa-whatsapp"></p>
+            </a>
+            <a href="https://www.instagram.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-instagram"></p>
+            </a>
+            <a href="https://www.facebook.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-facebook"></p>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
