@@ -6,8 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ABC 360 Notícias - Principal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/x-icon" href="/abc360noticias//assets/images/art/symbol.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/abc360noticias/assets/css/default.css">
+    <link rel="stylesheet" href="/abc360noticias//assets/css/default.css">
 </head>
 
 <body>
@@ -95,9 +96,13 @@
     const dropdownButtom = document.querySelector("#drop-down-button");
     function toggleDropDownMenu(){
         if (dropdownMenu.id == "drop-down-menu") {
+            dropdownButtom.classList.remove("fa-times");
+            dropdownButtom.classList.add("fa-bars");
             dropdownMenu.id = "drop-down-hidden";
             return;
         }
+        dropdownButtom.classList.remove("fa-bars");
+        dropdownButtom.classList.add("fa-times");
         dropdownMenu.id = "drop-down-menu";
     }
     dropdownButtom.addEventListener("click", toggleDropDownMenu);
@@ -179,7 +184,7 @@
     }
 </style>
 
-<a id="main-title" href="/abc360noticias/%20/">
+<a id="main-title" href="/abc360noticias/">
     <div id="main-title-inner">
         <img src="/abc360noticias/assets/images/art/name.png" alt="ABC 360">
         <figcaption>Por todos os lados, direto para você!</figcaption>
@@ -402,6 +407,14 @@
                 <div id="latest">
                     
                     
+                    <a class="article" href="/abc360noticias/news/Ex-CEO%20da%20Americanas%20%C3%A9%20liberado%20ap%C3%B3s%20depoimento%20em%20Madri.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/gutierrez.webp" alt="">
+                        </div>
+                        <figcaption>Ex-CEO da Americanas é liberado após depoimento em Madri</figcaption>
+                        <figcaption class="timestamp">29/06/2024 13:55</figcaption>
+                    </a>
+                    
                     <a class="article" href="/abc360noticias/news/Diadema%20inaugura%20novo%20Restaurante%20Popular%20no%20Jardim%20Marilene.html ">
                         <div class="thumb-container">
                             <img class="thumb" src="/abc360noticias/assets/images/news/Card%C3%A1pio%20do%20dia%20-Foto%20Dino%20Santos.jpg" alt="">
@@ -490,15 +503,6 @@
 
 <div id="side-column">
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
-    </a>
-    <a class="ad" id="ad2" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
-    </a>
-    <a class="ad" id="ad3" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
-    </a>
-    <a class="ad" id="ad4" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
         <img src="" alt="Divulgue aqui">
     </a>
 </div>

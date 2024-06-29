@@ -6,8 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ABC 360 Notícias - Ex-CEO das Lojas Americanas vira foragido por fraude de R$ 25 bilhões</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/x-icon" href="/abc360noticias//assets/images/art/symbol.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/abc360noticias/assets/css/default.css">
+    <link rel="stylesheet" href="/abc360noticias//assets/css/default.css">
 </head>
 
 <body>
@@ -95,9 +96,13 @@
     const dropdownButtom = document.querySelector("#drop-down-button");
     function toggleDropDownMenu(){
         if (dropdownMenu.id == "drop-down-menu") {
+            dropdownButtom.classList.remove("fa-times");
+            dropdownButtom.classList.add("fa-bars");
             dropdownMenu.id = "drop-down-hidden";
             return;
         }
+        dropdownButtom.classList.remove("fa-bars");
+        dropdownButtom.classList.add("fa-times");
         dropdownMenu.id = "drop-down-menu";
     }
     dropdownButtom.addEventListener("click", toggleDropDownMenu);
@@ -174,7 +179,7 @@
                 </p>
             </div>
             <div>
-                <p class="fa fa-search"></p>
+                <p class="fa fa-picture-o"></p>
                 <p>
                     Internet
                 </p>
@@ -210,15 +215,6 @@
 
 <div id="side-column">
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
-    </a>
-    <a class="ad" id="ad2" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
-    </a>
-    <a class="ad" id="ad3" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
-    </a>
-    <a class="ad" id="ad4" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
         <img src="" alt="Divulgue aqui">
     </a>
 </div>

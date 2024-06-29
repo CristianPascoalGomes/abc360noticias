@@ -75,9 +75,13 @@
     const dropdownButtom = document.querySelector("#drop-down-button");
     function toggleDropDownMenu(){
         if (dropdownMenu.id == "drop-down-menu") {
+            dropdownButtom.classList.remove("fa-times");
+            dropdownButtom.classList.add("fa-bars");
             dropdownMenu.id = "drop-down-hidden";
             return;
         }
+        dropdownButtom.classList.remove("fa-bars");
+        dropdownButtom.classList.add("fa-times");
         dropdownMenu.id = "drop-down-menu";
     }
     dropdownButtom.addEventListener("click", toggleDropDownMenu);
