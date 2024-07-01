@@ -2,7 +2,7 @@
 title: Vila Nova Mauá ganha nova escola municipal em homenagem ao neto do presidente Lula
 date: 29/06/2024 17:57
 image-url: assets/images/news/0331b7fea84dc2bb9c704d00bb3e49120cab3019.jpg
-image-source: Facebook / Dibulgação e Evandro Oliveira / PMM
+image-source: Facebook / Divulgação e Evandro Oliveira / PMM
 ---
 
 Na manhã deste sábado, a Vila Nova Mauá vivenciou um momento de grande emoção com a inauguração da Escola Municipal Arthur Araújo Lula da Silva. Situada na Rua Geraldo Nunes Cordeiro, 406, a nova instituição oferece 300 vagas para crianças de até 5 anos.

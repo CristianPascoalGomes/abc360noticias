@@ -16,6 +16,36 @@
         align-items: center;
     }
 
+    .highlights-side-button{
+        position: absolute;
+        width: calc(var(--space));
+        height: 100vw;
+        z-index: 1;
+        text-align: center;
+        
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.1);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .highlights-side-button:hover{
+        text-shadow: 0px 0px 8px black;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 1);
+        
+    }
+
+    #highlights-left{
+        left:0px;
+    }
+
+    #highlights-right{
+        right:0px;
+    }
+
     .highlight {
         width: 100%;
         position: relative;
@@ -58,15 +88,15 @@
     }
 
     .highlights-dots {
-        margin-top: 16px;
+        margin-block: 16px;
     }
 
     .highlights-dot {
         border-radius: 50%;
-        background-color: gray;
-        width: 8px;
-        height: 8px;
-        margin: 2px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 12px;
+        height: 12px;
+        margin: 4px;
     }
 
     .highlights-dot:hover {
@@ -76,9 +106,17 @@
     .current-highlight {
         background-color: black;
     }
+
+    @media only screen and (min-device-width: 480px){
+        .highlight-title{
+            font-size: 32px;
+        }
+    }
 </style>
 
 <div class="highlights">
+    <div type="button" id="highlights-left" class="highlights-side-button fa fa-chevron-left"> </div>
+    <div type="button" id="highlights-right" class="highlights-side-button fa fa-chevron-right"> </div>
     <div class="highlights-inner">
         {% assign highlights = site.news | reverse | where: 'highlight', true %}
 
@@ -108,7 +146,7 @@
 </div>
 
 <script>
-    const intervalAmount = 10000;
+    const intervalAmount = 2000;
     var currentHighlight = 0;
     const highlights = document.querySelector(".highlights");
     const dots = [
@@ -117,8 +155,19 @@
         document.querySelector("#third-dot"),
         document.querySelector("#fourth-dot"),
     ];
+    const leftButton = document.querySelector("#highlights-left");
+    const rightButton = document.querySelector("#highlights-right");
 
+    // var prevScrollTimeStamp = 0;
     function scrollTo(highlightNumber) {
+        // var now = Date.now();
+        // console.log(now - prevScrollTimeStamp);
+        // prevScrollTimeStamp = now;
+
+        highlightNumber = highlightNumber % 4;
+        if (highlightNumber < 0) {
+            highlightNumber = 4 + highlightNumber;
+        }
         currentHighlight = highlightNumber;
         const x = (highlights.scrollWidth / 4) * highlightNumber;
         const y = (0);
@@ -133,23 +182,36 @@
             dot.classList.remove("current-highlight");
         });
         dots[highlightNumber].classList.add("current-highlight");
+
+        leftButton.style.left = `${x}px`;
+        rightButton.style.right = `${-x}px`;
+
+        restartHighlightloop();
     }
 
-    dots[0].addEventListener("click", () => { scrollTo(0); restartHighlightloop();});
-    dots[1].addEventListener("click", () => { scrollTo(1); restartHighlightloop();});
-    dots[2].addEventListener("click", () => { scrollTo(2); restartHighlightloop();});
-    dots[3].addEventListener("click", () => { scrollTo(3); restartHighlightloop();});
+    dots[0].addEventListener("click", () => { scrollTo(0); });
+    dots[1].addEventListener("click", () => { scrollTo(1); });
+    dots[2].addEventListener("click", () => { scrollTo(2); });
+    dots[3].addEventListener("click", () => { scrollTo(3); });
     scrollTo(0);
 
     function nextHighlight() {
-        scrollTo((currentHighlight + 1) % 4);
+        scrollTo(currentHighlight + 1);
+    }
+    function prevHighlight() {
+        scrollTo(currentHighlight - 1);
     }
 
+    leftButton.addEventListener("click", prevHighlight);
+    rightButton.addEventListener("click", nextHighlight);
+
     var timeOutCode;
+
     function highlightLoop() {
         timeOutCode = setTimeout(highlightLoop, intervalAmount);
         nextHighlight();
     }
+    
     function restartHighlightloop(){
         stopHighlightloop();
         timeOutCode = setTimeout(highlightLoop, intervalAmount);

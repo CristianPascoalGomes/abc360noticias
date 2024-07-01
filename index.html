@@ -13,13 +13,15 @@ title: Principal
     }
 
     #main-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        margin-block: 2rem;
     }
 
     #main-title-inner {
         margin-inline: var(--space);
-        padding: 16px;
+        padding: var(--padding-size);
 
         display: flex;
         flex-direction: column;
@@ -27,8 +29,6 @@ title: Principal
         color: rgb(254, 199, 45);
 
     }
-
-    #main-title-inner>img {}
 
     #main-title-inner>figcaption {
         text-wrap: nowrap;
@@ -39,14 +39,14 @@ title: Principal
     #middle {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: var(--space);
     }
 
     #latest {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-bottom: 2rem;
+        gap: var(--space);
+        margin-bottom: var(--space);
     }
 
     #latest-news * {
@@ -60,7 +60,7 @@ title: Principal
 
     .article>* {
         margin-inline: var(--space);
-        padding-inline: 16px;
+        padding-inline: var(--padding-size);
     }
 
     .thumb-container {
@@ -75,6 +75,14 @@ title: Principal
         justify-content: center;
         margin-bottom: 1rem;
         background-color: black;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        :root{
+            #main-title-inner{
+                width:50%;
+            }
+        }
     }
 </style>
 
