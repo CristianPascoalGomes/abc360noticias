@@ -2,7 +2,7 @@
 title: "Conta de luz sobe a partir de hoje: Veja o que muda"
 date: 01/07/2024 12:32
 image-source: marcelo Casal Jr. / Agência brasil
-image-url: assets\images\news\966235-02072015-dsc_3382(1).jpg
+image-url: assets/images/news/966235-02072015-dsc_3382(1).jpg
 highlight: true
 ---
 
