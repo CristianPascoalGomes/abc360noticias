@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ABC 360 Notícias - Obras de recapeamento avançam em Santo André</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/x-icon" href="/abc360noticias//assets/images/art/symbol.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/abc360noticias//assets/css/default.css">
+</head>
+
+<body>
+    <style>
+    #navigation {
+        width: 100%;
+        background-color: #015F83;
+        color: white;
+    }
+
+    #navigation a {
+        padding: 16px;
+        /* border: 1px solid white; */
+    }
+
+    #navigation-inner>* {
+        display: flex;
+        margin-inline: var(--space);
+    }
+
+    #nav-top {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    #drop-down-button {
+        padding: 16px;
+    }
+
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #drop-down-hidden{
+        display: none;
+    }
+
+    #nav-right a {
+        font-size: larger;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
+
+            </a>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            
+            <a href="/abc360noticias/" >
+                Página Inicial
+            </a>
+            
+            <a href="/abc360noticias/quem-somos.html" >
+                Quem Somos
+            </a>
+            
+            <a href="/abc360noticias/nosso-time.html" >
+                Nosso Time
+            </a>
+            
+        </div>
+    </div>
+</nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownButtom.classList.remove("fa-times");
+            dropdownButtom.classList.add("fa-bars");
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownButtom.classList.remove("fa-bars");
+        dropdownButtom.classList.add("fa-times");
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>
+    <div id="page">
+        <style>
+    #columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #news *{
+        text-align: left;
+    }
+
+    #news > *{
+        margin-inline: var(--space);
+        padding: var(--padding-size);
+    }
+
+    #news-img-container {
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+        margin: 0px;    /* ovveride */
+        padding: 0px;    /* ovveride */
+    }
+
+    #news-info>*>*{
+        display: inline;
+    }
+
+    #news-body{
+        display: grid;
+        gap: 1.5rem;
+    }
+</style>
+
+
+
+
+<div id="columns">
+    <div id="news">
+        <div id="news-img-container">
+            <img src="/abc360noticias/assets/images/news/Rua%20Nova%20Parque%20Marajoara%20e%20Vila%20Homero%20Thon%20-%20Foto%20-%20Alex%20Cavanha_PSA%20(2).jpeg" alt="">
+        </div>
+        <h1>
+            Obras de recapeamento avançam em Santo André
+        </h1>
+        <div id="news-info">
+            <div>
+                <p class="fa fa-user-circle-o"></p>
+                <p>
+                    Cristian Pascoal Gomes
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-calendar"></p>
+                <p>
+                    01 July 2024
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-clock-o"></p>
+                <p>
+                    18:55
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-picture-o"></p>
+                <p>
+                    Alex Cavanha / PSA
+                </p>
+            </div>
+
+        </div>
+        <div id="news-body">
+            <p>O programa Rua Nova avança em Santo André, atingindo a Vila Homero Thon e o Parque Marajoara. Com mais de 400 km de recapeamento asfáltico já realizados, a iniciativa segue firme, trazendo melhorias a importantes vias desses bairros.</p>
+
+<p>Na Vila Homero Thon, a Avenida Guaianazes, Rua Rio Grande e Avenida Capuava estão sendo recapeadas. Já no Parque Marajoara, a Rua Glauber Rocha recebe as melhorias. O investimento total é de aproximadamente R$ 7,7 milhões, abrangendo quase 6 km de extensão.</p>
+
+<p>O prefeito Paulo Serra destacou a expansão do programa: “Já fizemos mais em sete anos do que nos 15 anos anteriores. Se ainda não chegamos a determinada região, pode ter certeza que ainda vamos chegar”.</p>
+
+<p>Entre os bairros já beneficiados estão Vila Alto de Santo André, Parque das Nações e Utinga, entre outros.</p>
+
+        </div>
+    </div>
+    <style>
+    
+    #side-column {
+    }
+    .ad{
+        margin-bottom: 2rem;
+        border: -1px solid black;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        background-color: gainsboro;
+    }
+    .ad>img{
+        font-size: xx-large;
+    }
+</style>
+
+
+<div id="side-column">
+    <!-- <h2 id="ad-title">
+        Patrocinio
+    </h2> -->
+    <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img src="" alt="Divulgue aqui">
+    </a>
+</div>
+</div>
+    </div>
+    <style>
+    footer{
+        background-color: #015F83;
+        color: white;
+        font-size: small;
+        display: flex; /* fix colapsing margins */
+    }
+
+    #footer-inner {
+        width: 100%;
+        margin: var(--space);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column>*{
+        padding: 16px;
+    }
+    
+    .contact>*{
+        display: inline;
+    }
+</style>
+
+
+<footer>
+    <div id="footer-inner">
+        <div class="footer-column" id="footer1">
+            <h3>
+                INSTITUCIONAL
+            </h3>
+            <a href="/abc360noticias/">Página Inicial</a>
+            <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
+            <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
+        </div>
+        <div class="footer-column" id="footer2">
+            <h3>
+                FALE CONOSCO
+            </h3>
+            <div class="contact">
+                <p> contato@abc360.com.br</p>
+                <p class="fa fa-envelope"></p>
+            </div>
+            <a href="https://wa.me/+5511959963937" class="contact">
+                <p>(11) 95996-3937</p>
+                <p class="fa fa-whatsapp"></p>
+            </a>
+            <a href="https://www.instagram.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-instagram"></p>
+            </a>
+            <a href="https://www.facebook.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-facebook"></p>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
