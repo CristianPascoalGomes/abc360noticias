@@ -142,35 +142,37 @@
 
 
 
-    #middle {
+    #middle-inner {
         display: grid;
         grid-template-columns: 1fr;
-        gap: var(--space);
     }
 
     #latest {
         display: grid;
         grid-template-columns: 1fr;
-        gap: var(--space);
         margin-bottom: var(--space);
     }
 
     #latest-news * {
         text-align: left;
     }
-
+    
     #latest-title {
         margin-inline: var(--space);
-        padding: var(--padding-size);
+        padding-inline: 16px;
+    }
+
+    .article{
+        margin-block: 16px;
     }
 
     .article>* {
         margin-inline: var(--space);
-        padding-inline: var(--padding-size);
+        padding-inline: 16px;
     }
 
     .thumb-container {
-        margin-inline: 0px;
+        margin-inline: 0px; /* override */
         padding: 0px;
 
         overflow: hidden;
@@ -188,7 +190,34 @@
             #main-title-inner{
                 width:50%;
             }
+
+            #latest-title {
+                font-size: 32px;
+            }
         }
+    }
+    
+    @media only screen and (min-device-width: 640px){
+        #middle-inner {
+            grid-template-columns: 3fr 2fr;
+            margin-inline: var(--space);
+            gap: 48px
+        }
+    
+        #middle-inner>*{
+            padding: var(--padding-size);
+        }
+
+        #latest-title {
+            margin-inline: 32px;
+            padding-inline: 0px;
+        }
+
+        .article>figcaption {
+            margin-inline: 32px;
+            padding-inline: 0px;
+        }
+
     }
 </style>
 
@@ -389,7 +418,7 @@
 </div>
 
 <script>
-    const intervalAmount = 2000;
+    const intervalAmount = 8000;
     var currentHighlight = 0;
     const highlights = document.querySelector(".highlights");
     const dots = [
@@ -476,6 +505,14 @@
                 </h2>
                 <div id="latest">
                     
+                    
+                    <a class="article" href="/abc360noticias/news/Mau%C3%A1%20intensifica%20campanha%20de%20vacina%C3%A7%C3%A3o%20contra%20a%20gripe.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/vacina%20mau%C3%A1.jpeg" alt="">
+                        </div>
+                        <figcaption>Mauá intensifica campanha de vacinação contra a gripe</figcaption>
+                        <figcaption class="timestamp">01/07/2024 15:37</figcaption>
+                    </a>
                     
                     <a class="article" href="/abc360noticias/news/C%C3%A2maras%20municipais%20do%20Grande%20ABC%20entram%20em%20recesso.html ">
                         <div class="thumb-container">
@@ -565,14 +602,6 @@
                         <figcaption class="timestamp">26/06/2024 20:00</figcaption>
                     </a>
                     
-                    <a class="article" href="/abc360noticias/news/Protesto%20da%20UFABC%20na%20camara%20de%20Santo%20Andr%C3%A9.html ">
-                        <div class="thumb-container">
-                            <img class="thumb" src="/abc360noticias/assets/images/news/vlcsnap-2024-06-26-11h21m14s571.jpg" alt="">
-                        </div>
-                        <figcaption>Câmara de Santo André encerra sessão após protesto da UFABC</figcaption>
-                        <figcaption class="timestamp">26/06/2024 11:00</figcaption>
-                    </a>
-                    
                 </div>
             </div>
         </div>
@@ -596,6 +625,9 @@
 
 
 <div id="side-column">
+    <!-- <h2 id="ad-title">
+        Patrocinio
+    </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
         <img src="" alt="Divulgue aqui">
     </a>

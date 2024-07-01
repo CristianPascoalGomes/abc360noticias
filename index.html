@@ -36,35 +36,37 @@ title: Principal
 
 
 
-    #middle {
+    #middle-inner {
         display: grid;
         grid-template-columns: 1fr;
-        gap: var(--space);
     }
 
     #latest {
         display: grid;
         grid-template-columns: 1fr;
-        gap: var(--space);
         margin-bottom: var(--space);
     }
 
     #latest-news * {
         text-align: left;
     }
-
+    
     #latest-title {
         margin-inline: var(--space);
-        padding: var(--padding-size);
+        padding-inline: 16px;
+    }
+
+    .article{
+        margin-block: 16px;
     }
 
     .article>* {
         margin-inline: var(--space);
-        padding-inline: var(--padding-size);
+        padding-inline: 16px;
     }
 
     .thumb-container {
-        margin-inline: 0px;
+        margin-inline: 0px; /* override */
         padding: 0px;
 
         overflow: hidden;
@@ -82,7 +84,34 @@ title: Principal
             #main-title-inner{
                 width:50%;
             }
+
+            #latest-title {
+                font-size: 32px;
+            }
         }
+    }
+    
+    @media only screen and (min-device-width: 640px){
+        #middle-inner {
+            grid-template-columns: 3fr 2fr;
+            margin-inline: var(--space);
+            gap: 48px
+        }
+    
+        #middle-inner>*{
+            padding: var(--padding-size);
+        }
+
+        #latest-title {
+            margin-inline: 32px;
+            padding-inline: 0px;
+        }
+
+        .article>figcaption {
+            margin-inline: 32px;
+            padding-inline: 0px;
+        }
+
     }
 </style>
 
