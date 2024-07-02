@@ -109,11 +109,6 @@
 </script>
     <div id="page">
         <style>
-    #columns {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 
     #news *{
         text-align: left;
@@ -137,25 +132,36 @@
         margin: 0px;    /* ovveride */
         padding: 0px;    /* ovveride */
     }
-
+    
     #news-info>*>*{
         display: inline;
     }
-
+    
     #news-body{
         display: grid;
         gap: 1.5rem;
     }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) + var(--space));
+        }
+        
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+    }
 </style>
 
 
-
-
-<div id="columns">
-    <div id="news">
-        <div id="news-img-container">
-            <img src="/abc360noticias/assets/images/news/Rua%20Nova%20Parque%20Marajoara%20e%20Vila%20Homero%20Thon%20-%20Foto%20-%20Alex%20Cavanha_PSA%20(2).jpeg" alt="">
-        </div>
+<div id="news">
+    <div id="news-img-container">
+        <img src="/abc360noticias/assets/images/news/Rua%20Nova%20Parque%20Marajoara%20e%20Vila%20Homero%20Thon%20-%20Foto%20-%20Alex%20Cavanha_PSA%20(2).jpeg" alt="">
+    </div>
+    <div id="news-head">
         <h1>
             Obras de recapeamento avançam em Santo André
         </h1>
@@ -184,8 +190,10 @@
                     Alex Cavanha / PSA
                 </p>
             </div>
-
+            
         </div>
+    </div>
+    <div id="news-content">
         <div id="news-body">
             <p>O programa Rua Nova avança em Santo André, atingindo a Vila Homero Thon e o Parque Marajoara. Com mais de 400 km de recapeamento asfáltico já realizados, a iniciativa segue firme, trazendo melhorias a importantes vias desses bairros.</p>
 
@@ -196,8 +204,7 @@
 <p>Entre os bairros já beneficiados estão Vila Alto de Santo André, Parque das Nações e Utinga, entre outros.</p>
 
         </div>
-    </div>
-    <style>
+        <style>
     
     #side-column {
     }
@@ -209,9 +216,11 @@
         align-items: center;
         background-color: gainsboro;
     }
-    .ad>img{
+    .ad-img{
         font-size: xx-large;
+        text-align: center;
     }
+
 </style>
 
 
@@ -220,9 +229,10 @@
         Patrocinio
     </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
+        <img class="ad-img" src="" alt="Divulgue aqui">
     </a>
 </div>
+    </div>
 </div>
     </div>
     <style>
@@ -237,7 +247,7 @@
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -253,6 +263,23 @@
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 

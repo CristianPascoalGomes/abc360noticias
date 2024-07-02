@@ -109,11 +109,6 @@
 </script>
     <div id="page">
         <style>
-    #columns {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 
     #news *{
         text-align: left;
@@ -137,25 +132,36 @@
         margin: 0px;    /* ovveride */
         padding: 0px;    /* ovveride */
     }
-
+    
     #news-info>*>*{
         display: inline;
     }
-
+    
     #news-body{
         display: grid;
         gap: 1.5rem;
     }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) + var(--space));
+        }
+        
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+    }
 </style>
 
 
-
-
-<div id="columns">
-    <div id="news">
-        <div id="news-img-container">
-            <img src="/abc360noticias/assets/images/news/tse_diplomacao_lula_alckimin_202212121226.jpg" alt="">
-        </div>
+<div id="news">
+    <div id="news-img-container">
+        <img src="/abc360noticias/assets/images/news/tse_diplomacao_lula_alckimin_202212121226.jpg" alt="">
+    </div>
+    <div id="news-head">
         <h1>
             Lula critica STF por decisão sobre descriminalização da maconha
         </h1>
@@ -184,8 +190,10 @@
                     Fabio Rodrigues - Pozzebom / Agência Brasil
                 </p>
             </div>
-
+            
         </div>
+    </div>
+    <div id="news-content">
         <div id="news-body">
             <p>Em entrevista ao Uol nesta quarta-feira, 26, o presidente Lula criticou a decisão do Supremo Tribunal Federal (STF) de descriminalizar o porte de maconha para uso pessoal, afirmando que a discussão deveria ocorrer no Congresso Nacional. Lula destacou a necessidade de diferenciação entre usuários e traficantes, mas argumentou que a competência para regulamentar o tema pertence ao Legislativo.</p>
 
@@ -198,8 +206,7 @@
 <p>A discussão também incluiu a determinação de um prazo de 18 meses para que o Congresso legisle sobre a quantidade permitida, além de proibir o uso recreativo em locais públicos. O presidente Lula, ao criticar o STF, busca alinhar-se tanto ao Congresso quanto ao eleitorado evangélico.</p>
 
         </div>
-    </div>
-    <style>
+        <style>
     
     #side-column {
     }
@@ -211,9 +218,11 @@
         align-items: center;
         background-color: gainsboro;
     }
-    .ad>img{
+    .ad-img{
         font-size: xx-large;
+        text-align: center;
     }
+
 </style>
 
 
@@ -222,9 +231,10 @@
         Patrocinio
     </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
+        <img class="ad-img" src="" alt="Divulgue aqui">
     </a>
 </div>
+    </div>
 </div>
     </div>
     <style>
@@ -239,7 +249,7 @@
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -255,6 +265,23 @@
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 

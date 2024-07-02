@@ -245,7 +245,7 @@
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -261,6 +261,23 @@
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 

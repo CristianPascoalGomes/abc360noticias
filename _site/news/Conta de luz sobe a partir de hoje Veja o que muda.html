@@ -109,11 +109,6 @@
 </script>
     <div id="page">
         <style>
-    #columns {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 
     #news *{
         text-align: left;
@@ -137,25 +132,36 @@
         margin: 0px;    /* ovveride */
         padding: 0px;    /* ovveride */
     }
-
+    
     #news-info>*>*{
         display: inline;
     }
-
+    
     #news-body{
         display: grid;
         gap: 1.5rem;
     }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) + var(--space));
+        }
+        
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+    }
 </style>
 
 
-
-
-<div id="columns">
-    <div id="news">
-        <div id="news-img-container">
-            <img src="/abc360noticias/assets/images/news/966235-02072015-dsc_3382(1).jpg" alt="">
-        </div>
+<div id="news">
+    <div id="news-img-container">
+        <img src="/abc360noticias/assets/images/news/966235-02072015-dsc_3382(1).jpg" alt="">
+    </div>
+    <div id="news-head">
         <h1>
             Conta de luz sobe a partir de hoje: Veja o que muda
         </h1>
@@ -184,8 +190,10 @@
                     marcelo Casal Jr. / Agência brasil
                 </p>
             </div>
-
+            
         </div>
+    </div>
+    <div id="news-content">
         <div id="news-body">
             <p>A Agência Nacional de Energia Elétrica (Aneel) anunciou que a conta de luz terá um aumento a partir desta segunda-feira, 1º de julho. A bandeira amarela foi ativada, resultando em uma taxa extra de R$ 1,88 por cada 100 kWh consumidos.</p>
 
@@ -199,8 +207,7 @@ Vermelha Patamar 1: R$ 4,465 por 100 kWh.
 Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
 
         </div>
-    </div>
-    <style>
+        <style>
     
     #side-column {
     }
@@ -212,9 +219,11 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
         align-items: center;
         background-color: gainsboro;
     }
-    .ad>img{
+    .ad-img{
         font-size: xx-large;
+        text-align: center;
     }
+
 </style>
 
 
@@ -223,9 +232,10 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
         Patrocinio
     </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
+        <img class="ad-img" src="" alt="Divulgue aqui">
     </a>
 </div>
+    </div>
 </div>
     </div>
     <style>
@@ -240,7 +250,7 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -256,6 +266,23 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 

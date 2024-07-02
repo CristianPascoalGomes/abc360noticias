@@ -201,7 +201,7 @@
         #middle-inner {
             grid-template-columns: 3fr 2fr;
             margin-inline: var(--space);
-            gap: 48px
+            gap: calc((3/4) * var(--space))
         }
     
         #middle-inner>*{
@@ -506,6 +506,14 @@
                 <div id="latest">
                     
                     
+                    <a class="article" href="/abc360noticias/news/Milei%20ignora%20Lula%20e%20confirma%20presen%C3%A7a%20no%20CPAC%20com%20Bolsonaro%20em%20Cambori%C3%BA.html ">
+                        <div class="thumb-container">
+                            <img class="thumb" src="/abc360noticias/assets/images/news/2023-11-20t013639z_35412883_rc2pg4aacdel_rtrmadp_3_argentina-election.webp" alt="">
+                        </div>
+                        <figcaption>Milei ignora Lula e confirma presença no CPAC com Bolsonaro em Camboriú</figcaption>
+                        <figcaption class="timestamp">02/07/2024 12:30</figcaption>
+                    </a>
+                    
                     <a class="article" href="/abc360noticias/news/Obras%20de%20recapeamento%20avan%C3%A7am%20em%20Santo%20Andr%C3%A9.html ">
                         <div class="thumb-container">
                             <img class="thumb" src="/abc360noticias/assets/images/news/Rua%20Nova%20Parque%20Marajoara%20e%20Vila%20Homero%20Thon%20-%20Foto%20-%20Alex%20Cavanha_PSA%20(2).jpeg" alt="">
@@ -594,14 +602,6 @@
                         <figcaption class="timestamp">27/06/2024 19:36</figcaption>
                     </a>
                     
-                    <a class="article" href="/abc360noticias/news/CEOS%20da%20Americanas%20ficam%20foragidos.html ">
-                        <div class="thumb-container">
-                            <img class="thumb" src="/abc360noticias/assets/images/news/Lojas-Americanas-e1620946213391.png" alt="">
-                        </div>
-                        <figcaption>Ex-CEO das Lojas Americanas vira foragido por fraude de R$ 25 bilhões</figcaption>
-                        <figcaption class="timestamp">27/06/2024 10:33</figcaption>
-                    </a>
-                    
                 </div>
             </div>
         </div>
@@ -618,9 +618,11 @@
         align-items: center;
         background-color: gainsboro;
     }
-    .ad>img{
+    .ad-img{
         font-size: xx-large;
+        text-align: center;
     }
+
 </style>
 
 
@@ -629,7 +631,7 @@
         Patrocinio
     </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
+        <img class="ad-img" src="" alt="Divulgue aqui">
     </a>
 </div>
     </div>
@@ -647,7 +649,7 @@
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -663,6 +665,23 @@
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 

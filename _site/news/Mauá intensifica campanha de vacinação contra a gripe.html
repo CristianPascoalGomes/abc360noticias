@@ -109,11 +109,6 @@
 </script>
     <div id="page">
         <style>
-    #columns {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 
     #news *{
         text-align: left;
@@ -137,25 +132,36 @@
         margin: 0px;    /* ovveride */
         padding: 0px;    /* ovveride */
     }
-
+    
     #news-info>*>*{
         display: inline;
     }
-
+    
     #news-body{
         display: grid;
         gap: 1.5rem;
     }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) + var(--space));
+        }
+        
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+    }
 </style>
 
 
-
-
-<div id="columns">
-    <div id="news">
-        <div id="news-img-container">
-            <img src="/abc360noticias/assets/images/news/vacina%20mau%C3%A1.jpeg" alt="">
-        </div>
+<div id="news">
+    <div id="news-img-container">
+        <img src="/abc360noticias/assets/images/news/vacina%20mau%C3%A1.jpeg" alt="">
+    </div>
+    <div id="news-head">
         <h1>
             Mauá intensifica campanha de vacinação contra a gripe
         </h1>
@@ -184,8 +190,10 @@
                     Prefeitura de Mauá
                 </p>
             </div>
-
+            
         </div>
+    </div>
+    <div id="news-content">
         <div id="news-body">
             <p>A Prefeitura de Mauá lança nesta semana uma nova ação para ampliar a cobertura vacinal contra a Influenza. Equipes da Secretaria Municipal de Saúde aplicarão as vacinas em pontos estratégicos da cidade, aproveitando a alta circulação de pessoas.</p>
 
@@ -202,8 +210,7 @@
 <p>A vacina é fundamental para prevenir casos graves de gripe, especialmente no inverno. Proteja-se e vacine-se!</p>
 
         </div>
-    </div>
-    <style>
+        <style>
     
     #side-column {
     }
@@ -215,9 +222,11 @@
         align-items: center;
         background-color: gainsboro;
     }
-    .ad>img{
+    .ad-img{
         font-size: xx-large;
+        text-align: center;
     }
+
 </style>
 
 
@@ -226,9 +235,10 @@
         Patrocinio
     </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
+        <img class="ad-img" src="" alt="Divulgue aqui">
     </a>
 </div>
+    </div>
 </div>
     </div>
     <style>
@@ -243,7 +253,7 @@
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -259,6 +269,23 @@
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 

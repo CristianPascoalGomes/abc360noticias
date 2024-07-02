@@ -109,11 +109,6 @@
 </script>
     <div id="page">
         <style>
-    #columns {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
 
     #news *{
         text-align: left;
@@ -137,25 +132,36 @@
         margin: 0px;    /* ovveride */
         padding: 0px;    /* ovveride */
     }
-
+    
     #news-info>*>*{
         display: inline;
     }
-
+    
     #news-body{
         display: grid;
         gap: 1.5rem;
     }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) + var(--space));
+        }
+        
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+    }
 </style>
 
 
-
-
-<div id="columns">
-    <div id="news">
-        <div id="news-img-container">
-            <img src="/abc360noticias/assets/images/news/Card%C3%A1pio%20do%20dia%20-Foto%20Dino%20Santos.jpg" alt="">
-        </div>
+<div id="news">
+    <div id="news-img-container">
+        <img src="/abc360noticias/assets/images/news/Card%C3%A1pio%20do%20dia%20-Foto%20Dino%20Santos.jpg" alt="">
+    </div>
+    <div id="news-head">
         <h1>
             Diadema inaugura novo Restaurante Popular no Jardim Marilene
         </h1>
@@ -184,8 +190,10 @@
                     Prefeitura DIadema / Dino Santos
                 </p>
             </div>
-
+            
         </div>
+    </div>
+    <div id="news-content">
         <div id="news-body">
             <p>Hoje, 28/6, às 10h, a Prefeitura de Diadema inaugurou o Restaurante Popular Jardim Marilene, na Avenida Alberto Jafet, 709. A nova unidade serve 800 refeições diárias a R$ 2,00, de segunda a sexta, das 10h às 13h30.</p>
 
@@ -194,8 +202,7 @@
 <p>O prefeito José de Filippi Júnior destacou a importância do restaurante para a segurança alimentar e a convivência comunitária. A secretária Luci Uliana ressaltou que a nova unidade atende a uma demanda antiga da população. Além disso, o local contará com uma cozinha didática para cursos e workshops.</p>
 
         </div>
-    </div>
-    <style>
+        <style>
     
     #side-column {
     }
@@ -207,9 +214,11 @@
         align-items: center;
         background-color: gainsboro;
     }
-    .ad>img{
+    .ad-img{
         font-size: xx-large;
+        text-align: center;
     }
+
 </style>
 
 
@@ -218,9 +227,10 @@
         Patrocinio
     </h2> -->
     <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
-        <img src="" alt="Divulgue aqui">
+        <img class="ad-img" src="" alt="Divulgue aqui">
     </a>
 </div>
+    </div>
 </div>
     </div>
     <style>
@@ -235,7 +245,7 @@
         width: 100%;
         margin: var(--space);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         gap: 2rem;
     }
@@ -251,6 +261,23 @@
     
     .contact>*{
         display: inline;
+    }
+
+    @media only screen and (min-device-width: 480px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
     }
 </style>
 
