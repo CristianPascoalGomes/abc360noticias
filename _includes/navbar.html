@@ -3,6 +3,10 @@
         width: 100%;
         background-color: #015F83;
         color: white;
+
+        position: sticky;
+        top: 0px;
+        z-index: 2;
     }
 
     #navigation a {
@@ -34,6 +38,10 @@
         display: none;
     }
 
+    #nav-left{
+        display: none;
+    }
+
     #nav-right a {
         font-size: larger;
         text-align: center;
@@ -44,6 +52,16 @@
         color: rgb(254, 199, 45);
         cursor: pointer;
     }
+
+    @media only screen and (min-device-width: 640px){
+        #drop-down-button{
+            display: none;
+        }
+
+        #nav-left{
+            display: inline;
+        }
+    }
 </style>
 
 
@@ -53,6 +71,15 @@
             <a id="drop-down-button" class="fa fa-bars">
 
             </a>
+
+            <div id="nav-left">
+                {% for item in site.data.urls %}
+                <a href="{{ item.url | relative_url  }}" {% if page.url==item.url %} style="color: rgb(254, 199, 45);" {%
+                    endif %}>
+                    {{ item.name }}
+                </a>
+                {% endfor %}
+            </div>
 
             <div id="nav-right">
                 <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>

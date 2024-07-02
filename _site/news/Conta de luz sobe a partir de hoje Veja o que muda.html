@@ -17,6 +17,10 @@
         width: 100%;
         background-color: #015F83;
         color: white;
+
+        position: sticky;
+        top: 0px;
+        z-index: 2;
     }
 
     #navigation a {
@@ -48,6 +52,10 @@
         display: none;
     }
 
+    #nav-left{
+        display: none;
+    }
+
     #nav-right a {
         font-size: larger;
         text-align: center;
@@ -58,6 +66,16 @@
         color: rgb(254, 199, 45);
         cursor: pointer;
     }
+
+    @media only screen and (min-device-width: 640px){
+        #drop-down-button{
+            display: none;
+        }
+
+        #nav-left{
+            display: inline;
+        }
+    }
 </style>
 
 
@@ -67,6 +85,22 @@
             <a id="drop-down-button" class="fa fa-bars">
 
             </a>
+
+            <div id="nav-left">
+                
+                <a href="/abc360noticias/" >
+                    Página Inicial
+                </a>
+                
+                <a href="/abc360noticias/quem-somos.html" >
+                    Quem Somos
+                </a>
+                
+                <a href="/abc360noticias/nosso-time.html" >
+                    Nosso Time
+                </a>
+                
+            </div>
 
             <div id="nav-right">
                 <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
@@ -139,7 +173,7 @@
     
     #news-body{
         display: grid;
-        gap: 1.5rem;
+        gap: var(--padding-size)
     }
     
     @media only screen and (min-device-width: 640px){
@@ -210,16 +244,15 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
         <style>
     
     #side-column {
+
     }
     .ad{
-        margin-bottom: 2rem;
-        border: -1px solid black;
         aspect-ratio: 16/9;
         display: flex;
         align-items: center;
         background-color: gainsboro;
     }
-    .ad-img{
+    #ad-column>*>img{
         font-size: xx-large;
         text-align: center;
     }
@@ -227,7 +260,7 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
 </style>
 
 
-<div id="side-column">
+<div id="ad-column">
     <!-- <h2 id="ad-title">
         Patrocinio
     </h2> -->
@@ -248,7 +281,8 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
 
     #footer-inner {
         width: 100%;
-        margin: var(--space);
+        margin-inline: var(--space);
+        margin-block: calc(0.5 * var(--space));
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -261,7 +295,8 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
     }
 
     .footer-column>*{
-        padding: 16px;
+        padding-block: calc(0.5 * var(--padding-size));
+        padding-inline: var(--padding-size);
     }
     
     .contact>*{
@@ -293,9 +328,13 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
             <h3>
                 INSTITUCIONAL
             </h3>
-            <a href="/abc360noticias/">Página Inicial</a>
-            <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
-            <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
+            
+                <a href="/abc360noticias/">Página Inicial</a>
+            
+                <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
+            
+                <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
+            
         </div>
         <div class="footer-column" id="footer2">
             <h3>

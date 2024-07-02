@@ -8,7 +8,8 @@
 
     #footer-inner {
         width: 100%;
-        margin: var(--space);
+        margin-inline: var(--space);
+        margin-block: calc(0.5 * var(--space));
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,7 +22,8 @@
     }
 
     .footer-column>*{
-        padding: 16px;
+        padding-block: calc(0.5 * var(--padding-size));
+        padding-inline: var(--padding-size);
     }
     
     .contact>*{
@@ -53,9 +55,9 @@
             <h3>
                 INSTITUCIONAL
             </h3>
-            <a href="{{ "/" | relative_url}}">Página Inicial</a>
-            <a href="{{ "/quem-somos.html" | relative_url}}">Quem Somos</a>
-            <a href="{{ "/nosso-time.html" | relative_url}}">Nosso Time</a>
+            {% for item in site.data.urls %}
+                <a href="{{ item.url | relative_url }}">{{item.name}}</a>
+            {% endfor %}
         </div>
         <div class="footer-column" id="footer2">
             <h3>
