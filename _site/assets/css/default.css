@@ -1,5 +1,5 @@
 :root {
-    --space: 32px;
+    --space: 12.5%;
     --padding-size: 16px;
 }
 
@@ -10,6 +10,7 @@
     border: 0;
     font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
     text-align: center;
+    font-size: 16px;
 }
 
 img {
@@ -31,9 +32,15 @@ a:active {
     color: inherit;
     text-decoration: none;
 }
-
+/* 
 @media only screen and (min-device-width: 480px){
     :root{
         --space: 64px;
     }
 }
+
+@media only screen and (min-device-width: 720px){
+    :root{
+        --space: 128px;
+    }
+} */

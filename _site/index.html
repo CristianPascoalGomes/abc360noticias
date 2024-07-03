@@ -17,30 +17,24 @@
         width: 100%;
         background-color: #015F83;
         color: white;
-
+        
         position: sticky;
         top: 0px;
         z-index: 2;
     }
 
     #navigation a {
-        padding: 16px;
-        /* border: 1px solid white; */
+        padding: var(--padding-size);
     }
-
-    #navigation-inner>* {
-        display: flex;
+    
+    #navigation-inner {
         margin-inline: var(--space);
     }
 
-    #nav-top {
-        justify-content: space-between;
+    #navigation-inner > * {
+        display: flex;
         align-items: center;
-    }
-
-
-    #drop-down-button {
-        padding: 16px;
+        justify-content: space-between;
     }
 
     #drop-down-menu {
@@ -56,9 +50,8 @@
         display: none;
     }
 
-    #nav-right a {
+    #nav-right{
         font-size: larger;
-        text-align: center;
         text-decoration: none;
     }
 
@@ -67,7 +60,7 @@
         cursor: pointer;
     }
 
-    @media only screen and (min-device-width: 640px){
+    @media only screen and (min-device-width: 720px){
         #drop-down-button{
             display: none;
         }
@@ -147,62 +140,62 @@
         overflow: hidden;
     }
 
-    .timestamp {
-        color: rgba(0, 0, 0, 0.5);
-        font-size: small;
-    }
-
+    
     #main-title {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-
+    
     #main-title-inner {
         margin-inline: var(--space);
         padding: var(--padding-size);
-
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         color: rgb(254, 199, 45);
-
+        
     }
-
+    
     #main-title-inner>figcaption {
-        text-wrap: nowrap;
+        font-size: 4vw;
     }
-
-
-
+    
+    
+    
     #middle-inner {
         display: grid;
         grid-template-columns: 1fr;
     }
-
+    
     #latest {
         display: grid;
         grid-template-columns: 1fr;
-        margin-bottom: var(--space);
     }
-
+    
     #latest-news * {
         text-align: left;
     }
     
     #latest-title {
         margin-inline: var(--space);
-        padding-inline: 16px;
+        padding-inline: var(--padding-size);
+    }
+    
+    .timestamp {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: small;
     }
 
     .article{
         margin-block: 16px;
     }
-
+    
     .article>* {
         margin-inline: var(--space);
-        padding-inline: 16px;
+        padding-inline: var(--padding-size);
     }
 
     .thumb-container {
@@ -218,20 +211,16 @@
         margin-bottom: 1rem;
         background-color: black;
     }
-
-    @media only screen and (min-device-width: 480px){
-        :root{
-            #main-title-inner{
-                width:50%;
-            }
-
-            #latest-title {
-                font-size: 32px;
-            }
-        }
-    }
     
-    @media only screen and (min-device-width: 640px){
+    @media only screen and (min-device-width: 720px){
+        #main-title-inner{
+            width: 25%;
+        }
+        
+        #main-title-inner>figcaption{
+            font-size: 1vw;
+        }
+
         #middle-inner {
             grid-template-columns: 3fr 2fr;
             margin-inline: var(--space);
@@ -251,30 +240,31 @@
             margin-inline: 32px;
             padding-inline: 0px;
         }
-
+        
     }
 </style>
 
-<a id="main-title" href="/abc360noticias/">
-    <div id="main-title-inner">
+<div id="main-title">
+    <a id="main-title-inner" href="/abc360noticias/">
         <img src="/abc360noticias/assets/images/art/name.png" alt="ABC 360">
         <figcaption>Por todos os lados, direto para você!</figcaption>
-    </div>
-</a>
+    </a>
+</div>
 
 <style>
     .highlights {
+
         overflow: hidden;
-        width: 100%;
-        aspect-ratio: 1.6;
+        aspect-ratio: 16/9;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        background-color: black;
     }
 
     .highlights-inner {
-        width: 200%;
+        width: 100%;
         display: grid;
         grid-template-columns: 100% 100% 100% 100%;
         align-items: center;
@@ -288,26 +278,29 @@
         text-align: center;
         
         font-size: 32px;
-        color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255);
+        text-shadow: 0px 0px 8px black;
+        cursor: pointer;
         
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-    .highlights-side-button:hover{
-        text-shadow: 0px 0px 8px black;
-        cursor: pointer;
-        color: rgba(255, 255, 255, 1);
-        
     }
 
     #highlights-left{
         left:0px;
     }
 
+    #highlights-left:hover{
+        background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+    }
+
     #highlights-right{
         right:0px;
+    }
+
+    #highlights-right:hover{
+        background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
     }
 
     .highlight {
@@ -334,7 +327,7 @@
 
     .highlight-title {
         text-align: left;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         color: white;
         max-height: 50%;
@@ -371,11 +364,13 @@
         background-color: black;
     }
 
-    @media only screen and (min-device-width: 480px){
-        .highlight-title{
-            font-size: 32px;
-        }
+    @media screen and (min-width:720px){
+        .highlights{
+            margin-inline: calc(var(--space) + var(--padding-size));
+            aspect-ratio: 5/2;
+        }        
     }
+
 </style>
 
 <div class="highlights">
@@ -677,32 +672,39 @@
         font-size: small;
         display: flex; /* fix colapsing margins */
     }
-
+    
     #footer-inner {
         width: 100%;
+        margin-block: var(--padding-size);
         margin-inline: var(--space);
-        margin-block: calc(0.5 * var(--space));
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-between;
+        gap: 1rem;
     }
-
+    
     .footer-column{
         display: flex;
         flex-direction: column;
     }
-
+    
     .footer-column>*{
         padding-block: calc(0.5 * var(--padding-size));
         padding-inline: var(--padding-size);
     }
     
+    #footer2 .fa{
+        display: inline-block;      /* making fa icons square */  
+        width: 16px;                /* making fa icons square */  
+        height: 16px;               /* making fa icons square */  
+    }
+
     .contact>*{
         display: inline;
     }
-
-    @media only screen and (min-device-width: 480px){
+    
+    @media only screen and (min-device-width: 720px){
         #footer-inner{
             justify-content: space-between;
             flex-wrap: nowrap;
@@ -717,6 +719,7 @@
             text-align: right;
             display: block;
         }
+
     }
 </style>
 

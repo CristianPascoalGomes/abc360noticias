@@ -17,30 +17,24 @@
         width: 100%;
         background-color: #015F83;
         color: white;
-
+        
         position: sticky;
         top: 0px;
         z-index: 2;
     }
 
     #navigation a {
-        padding: 16px;
-        /* border: 1px solid white; */
+        padding: var(--padding-size);
     }
-
-    #navigation-inner>* {
-        display: flex;
+    
+    #navigation-inner {
         margin-inline: var(--space);
     }
 
-    #nav-top {
-        justify-content: space-between;
+    #navigation-inner > * {
+        display: flex;
         align-items: center;
-    }
-
-
-    #drop-down-button {
-        padding: 16px;
+        justify-content: space-between;
     }
 
     #drop-down-menu {
@@ -56,9 +50,8 @@
         display: none;
     }
 
-    #nav-right a {
+    #nav-right{
         font-size: larger;
-        text-align: center;
         text-decoration: none;
     }
 
@@ -67,7 +60,7 @@
         cursor: pointer;
     }
 
-    @media only screen and (min-device-width: 640px){
+    @media only screen and (min-device-width: 720px){
         #drop-down-button{
             display: none;
         }
@@ -154,7 +147,6 @@
     }
 
     #news-img-container {
-        width: 100%;
         aspect-ratio: 16/9;
         overflow: hidden;
         display: grid;
@@ -177,16 +169,21 @@
     }
     
     @media only screen and (min-device-width: 640px){
+        #news-img-container{
+            margin-inline: var(--space);
+        }
+
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+
         #news-content{
             display: grid;
             grid-template-columns: 3fr 2fr;
             gap: calc(var(--padding-size) + var(--space));
         }
         
-        #news-info>*{
-            display: inline;
-            margin-right: 16px;
-        }
     }
 </style>
 
@@ -271,32 +268,39 @@
         font-size: small;
         display: flex; /* fix colapsing margins */
     }
-
+    
     #footer-inner {
         width: 100%;
+        margin-block: var(--padding-size);
         margin-inline: var(--space);
-        margin-block: calc(0.5 * var(--space));
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-between;
+        gap: 1rem;
     }
-
+    
     .footer-column{
         display: flex;
         flex-direction: column;
     }
-
+    
     .footer-column>*{
         padding-block: calc(0.5 * var(--padding-size));
         padding-inline: var(--padding-size);
     }
     
+    #footer2 .fa{
+        display: inline-block;      /* making fa icons square */  
+        width: 16px;                /* making fa icons square */  
+        height: 16px;               /* making fa icons square */  
+    }
+
     .contact>*{
         display: inline;
     }
-
-    @media only screen and (min-device-width: 480px){
+    
+    @media only screen and (min-device-width: 720px){
         #footer-inner{
             justify-content: space-between;
             flex-wrap: nowrap;
@@ -311,6 +315,7 @@
             text-align: right;
             display: block;
         }
+
     }
 </style>
 

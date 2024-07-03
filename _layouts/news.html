@@ -14,7 +14,6 @@ layout: default
     }
 
     #news-img-container {
-        width: 100%;
         aspect-ratio: 16/9;
         overflow: hidden;
         display: grid;
@@ -37,16 +36,21 @@ layout: default
     }
     
     @media only screen and (min-device-width: 640px){
+        #news-img-container{
+            margin-inline: var(--space);
+        }
+
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+
         #news-content{
             display: grid;
             grid-template-columns: 3fr 2fr;
             gap: calc(var(--padding-size) + var(--space));
         }
         
-        #news-info>*{
-            display: inline;
-            margin-right: 16px;
-        }
     }
 </style>
 

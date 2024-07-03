@@ -7,62 +7,62 @@ title: Principal
         overflow: hidden;
     }
 
-    .timestamp {
-        color: rgba(0, 0, 0, 0.5);
-        font-size: small;
-    }
-
+    
     #main-title {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-
+    
     #main-title-inner {
         margin-inline: var(--space);
         padding: var(--padding-size);
-
+        
         display: flex;
         flex-direction: column;
         align-items: center;
         color: rgb(254, 199, 45);
-
+        
     }
-
+    
     #main-title-inner>figcaption {
-        text-wrap: nowrap;
+        font-size: 4vw;
     }
-
-
-
+    
+    
+    
     #middle-inner {
         display: grid;
         grid-template-columns: 1fr;
     }
-
+    
     #latest {
         display: grid;
         grid-template-columns: 1fr;
-        margin-bottom: var(--space);
     }
-
+    
     #latest-news * {
         text-align: left;
     }
     
     #latest-title {
         margin-inline: var(--space);
-        padding-inline: 16px;
+        padding-inline: var(--padding-size);
+    }
+    
+    .timestamp {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: small;
     }
 
     .article{
         margin-block: 16px;
     }
-
+    
     .article>* {
         margin-inline: var(--space);
-        padding-inline: 16px;
+        padding-inline: var(--padding-size);
     }
 
     .thumb-container {
@@ -78,20 +78,16 @@ title: Principal
         margin-bottom: 1rem;
         background-color: black;
     }
-
-    @media only screen and (min-device-width: 480px){
-        :root{
-            #main-title-inner{
-                width:50%;
-            }
-
-            #latest-title {
-                font-size: 32px;
-            }
-        }
-    }
     
-    @media only screen and (min-device-width: 640px){
+    @media only screen and (min-device-width: 720px){
+        #main-title-inner{
+            width: 25%;
+        }
+        
+        #main-title-inner>figcaption{
+            font-size: 1vw;
+        }
+
         #middle-inner {
             grid-template-columns: 3fr 2fr;
             margin-inline: var(--space);
@@ -111,16 +107,16 @@ title: Principal
             margin-inline: 32px;
             padding-inline: 0px;
         }
-
+        
     }
 </style>
 
-<a id="main-title" href="{{ "/" | relative_url }}">
-    <div id="main-title-inner">
+<div id="main-title">
+    <a id="main-title-inner" href="{{ "/" | relative_url }}">
         <img src="{{ "/assets/images/art/name.png" | relative_url }}" alt="ABC 360">
         <figcaption>Por todos os lados, direto para você!</figcaption>
-    </div>
-</a>
+    </a>
+</div>
 
 {% include highlights.html %}
 

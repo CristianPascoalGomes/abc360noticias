@@ -1,16 +1,17 @@
 <style>
     .highlights {
+
         overflow: hidden;
-        width: 100%;
-        aspect-ratio: 1.6;
+        aspect-ratio: 16/9;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        background-color: black;
     }
 
     .highlights-inner {
-        width: 200%;
+        width: 100%;
         display: grid;
         grid-template-columns: 100% 100% 100% 100%;
         align-items: center;
@@ -24,26 +25,29 @@
         text-align: center;
         
         font-size: 32px;
-        color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255);
+        text-shadow: 0px 0px 8px black;
+        cursor: pointer;
         
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-    .highlights-side-button:hover{
-        text-shadow: 0px 0px 8px black;
-        cursor: pointer;
-        color: rgba(255, 255, 255, 1);
-        
     }
 
     #highlights-left{
         left:0px;
     }
 
+    #highlights-left:hover{
+        background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+    }
+
     #highlights-right{
         right:0px;
+    }
+
+    #highlights-right:hover{
+        background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
     }
 
     .highlight {
@@ -70,7 +74,7 @@
 
     .highlight-title {
         text-align: left;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         color: white;
         max-height: 50%;
@@ -107,11 +111,13 @@
         background-color: black;
     }
 
-    @media only screen and (min-device-width: 480px){
-        .highlight-title{
-            font-size: 32px;
-        }
+    @media screen and (min-width:720px){
+        .highlights{
+            margin-inline: calc(var(--space) + var(--padding-size));
+            aspect-ratio: 5/2;
+        }        
     }
+
 </style>
 
 <div class="highlights">

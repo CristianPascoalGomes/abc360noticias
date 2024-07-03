@@ -5,32 +5,39 @@
         font-size: small;
         display: flex; /* fix colapsing margins */
     }
-
+    
     #footer-inner {
         width: 100%;
+        margin-block: var(--padding-size);
         margin-inline: var(--space);
-        margin-block: calc(0.5 * var(--space));
+
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: space-between;
+        gap: 1rem;
     }
-
+    
     .footer-column{
         display: flex;
         flex-direction: column;
     }
-
+    
     .footer-column>*{
         padding-block: calc(0.5 * var(--padding-size));
         padding-inline: var(--padding-size);
     }
     
+    #footer2 .fa{
+        display: inline-block;      /* making fa icons square */  
+        width: 16px;                /* making fa icons square */  
+        height: 16px;               /* making fa icons square */  
+    }
+
     .contact>*{
         display: inline;
     }
-
-    @media only screen and (min-device-width: 480px){
+    
+    @media only screen and (min-device-width: 720px){
         #footer-inner{
             justify-content: space-between;
             flex-wrap: nowrap;
@@ -45,6 +52,7 @@
             text-align: right;
             display: block;
         }
+
     }
 </style>
 
