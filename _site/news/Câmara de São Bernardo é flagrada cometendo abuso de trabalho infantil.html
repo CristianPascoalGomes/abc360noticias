@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ABC 360 Notícias - Câmara de São Bernardo é flagrada cometendo abuso de trabalho infantil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/x-icon" href="/abc360noticias//assets/images/art/symbol.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/abc360noticias//assets/css/default.css">
+</head>
+
+<body>
+    <style>
+    #navigation {
+        width: 100%;
+        background-color: #015F83;
+        color: white;
+        
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+
+    #navigation a {
+        padding: var(--padding-size);
+    }
+    
+    #navigation-inner {
+        margin-inline: var(--space);
+    }
+
+    #navigation-inner > * {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #drop-down-hidden{
+        display: none;
+    }
+
+    #nav-left{
+        display: none;
+    }
+
+    #nav-right{
+        font-size: larger;
+        text-decoration: none;
+    }
+
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
+    }
+
+    @media only screen and (min-device-width: 720px){
+        #drop-down-button{
+            display: none;
+        }
+
+        #nav-left{
+            display: inline;
+        }
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
+
+            </a>
+
+            <div id="nav-left">
+                
+                <a href="/abc360noticias/" >
+                    Página Inicial
+                </a>
+                
+                <a href="/abc360noticias/quem-somos.html" >
+                    Quem Somos
+                </a>
+                
+                <a href="/abc360noticias/nosso-time.html" >
+                    Nosso Time
+                </a>
+                
+            </div>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            
+            <a href="/abc360noticias/" >
+                Página Inicial
+            </a>
+            
+            <a href="/abc360noticias/quem-somos.html" >
+                Quem Somos
+            </a>
+            
+            <a href="/abc360noticias/nosso-time.html" >
+                Nosso Time
+            </a>
+            
+        </div>
+    </div>
+</nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownButtom.classList.remove("fa-times");
+            dropdownButtom.classList.add("fa-bars");
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownButtom.classList.remove("fa-bars");
+        dropdownButtom.classList.add("fa-times");
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>
+    <div id="page">
+        <style>
+
+    #news *{
+        text-align: left;
+    }
+
+    #news > *{
+        margin-inline: var(--space);
+        padding: var(--padding-size);
+    }
+
+    #news-img-container {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+        margin: 0px;    /* ovveride */
+        padding: 0px;    /* ovveride */
+    }
+    
+    #news-info>*>*{
+        display: inline;
+    }
+    
+    #news-body{
+        display: grid;
+        gap: var(--padding-size)
+    }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-img-container{
+            margin-inline: var(--space);
+        }
+
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) + var(--space));
+        }
+        
+    }
+</style>
+
+
+<div id="news">
+    <div id="news-img-container">
+        <img src="/abc360noticias/assets/images/news/Imagem%20do%20WhatsApp%20de%202024-07-03%20%C3%A0(s)%2018.21.15_c8a4c31f.jpg" alt="">
+    </div>
+    <div id="news-head">
+        <h1>
+            Câmara de São Bernardo é flagrada cometendo abuso de trabalho infantil
+        </h1>
+        <div id="news-info">
+            <div>
+                <p class="fa fa-user-circle-o"></p>
+                <p>
+                    João Antonio Cardoso
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-calendar"></p>
+                <p>
+                    03 July 2024
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-clock-o"></p>
+                <p>
+                    19:00
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-picture-o"></p>
+                <p>
+                    Cristian Pascoal Gomes / ABC 360 Notícias
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="news-content">
+        <div id="news-body">
+            <p>A Câmara Municipal de São Bernardo do Campo, presidida por Danilo Lima (Podemos), primo do pré-candidato a prefeito Marcelo Lima, do mesmo partido, errou no planejamento e deixou para a última hora a licitação da empresa que terceirizaria as recepcionistas.</p>
+
+<p><img src="/abc360noticias/assets/images/news/trabalho infantil sbc extra.jpg" alt="" />
+<em>Os adolescentes aprendizes em exercendo função de profissionais</em></p>
+
+<p>O contrato atual com a MABG terminou na última sexta-feira, e na segunda-feira a Câmara amanheceu sem recepcionistas, pois o pregão foi realizado na sexta e a finalização do processo e assinatura ainda levará alguns dias.</p>
+
+<p>A nova empresa será a CK Clean Facilities Ltda, que receberá R$ 196.380,00 por 4 recepcionistas durante 12 meses, o que significa que cada recepcionista custará mais de R$ 4 mil por mês para a CMSBC. Ainda não há previsão para o começo dos trabalhos.</p>
+
+<p>Para compensar a ausência das recepcionistas, a gestão de Danilo Lima colocou menores aprendizes para atuar na recepção. Sem experiência, a situação na Câmara se desorganizou, e alguns menores procuraram a reportagem para denunciar anonimamente.</p>
+
+<p>A reportagem do ABC 360 esteve na Câmara na quarta-feira (03/07) à tarde e flagrou quatro menores aprendizes na recepção do prédio dos gabinetes dos vereadores, desacompanhados de qualquer adulto. A recepção do prédio do plenário estava sem ninguém, deixando todo o setor administrativo, incluindo o plenário, sem controle de acesso, colocando todos os servidores de carreira em risco.</p>
+
+<p>Um especialista ouvido pela reportagem afirmou: “Menor aprendiz deve ter uma jornada reduzida e aprender um ofício. O próprio cargo de recepcionista é terceirizado e não comporta aprendizes. Eles deveriam estar nos setores da Câmara aprendendo como tramita uma lei, auxiliando nos recursos humanos e no financeiro. Isso é um desvio de finalidade e deve ser combatido imediatamente.”</p>
+
+<p>A Câmara de São Bernardo foi procurada por e-mail, mas não respondeu até o fechamento da matéria.</p>
+
+        </div>
+        <style>
+    
+    #side-column {
+
+    }
+    .ad{
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        background-color: gainsboro;
+    }
+    #ad-column>*>img{
+        font-size: xx-large;
+        text-align: center;
+    }
+
+</style>
+
+
+<div id="ad-column">
+    <!-- <h2 id="ad-title">
+        Patrocinio
+    </h2> -->
+    <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img class="ad-img" src="" alt="Divulgue aqui">
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <style>
+    footer{
+        background-color: #015F83;
+        color: white;
+        font-size: small;
+        display: flex; /* fix colapsing margins */
+    }
+    
+    #footer-inner {
+        width: 100%;
+        margin-block: var(--padding-size);
+        margin-inline: var(--space);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-column>*{
+        padding-block: calc(0.5 * var(--padding-size));
+        padding-inline: var(--padding-size);
+    }
+    
+    #footer2 .fa{
+        display: inline-block;      /* making fa icons square */  
+        width: 16px;                /* making fa icons square */  
+        height: 16px;               /* making fa icons square */  
+    }
+
+    .contact>*{
+        display: inline;
+    }
+    
+    @media only screen and (min-device-width: 720px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
+
+    }
+</style>
+
+
+<footer>
+    <div id="footer-inner">
+        <div class="footer-column" id="footer1">
+            <h3>
+                INSTITUCIONAL
+            </h3>
+            
+                <a href="/abc360noticias/">Página Inicial</a>
+            
+                <a href="/abc360noticias/quem-somos.html">Quem Somos</a>
+            
+                <a href="/abc360noticias/nosso-time.html">Nosso Time</a>
+            
+        </div>
+        <div class="footer-column" id="footer2">
+            <h3>
+                FALE CONOSCO
+            </h3>
+            <div class="contact">
+                <p> contato@abc360.com.br</p>
+                <p class="fa fa-envelope"></p>
+            </div>
+            <a href="https://wa.me/+5511959963937" class="contact">
+                <p>(11) 95996-3937</p>
+                <p class="fa fa-whatsapp"></p>
+            </a>
+            <a href="https://www.instagram.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-instagram"></p>
+            </a>
+            <a href="https://www.facebook.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-facebook"></p>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
