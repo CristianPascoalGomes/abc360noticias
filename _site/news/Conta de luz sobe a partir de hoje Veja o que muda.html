@@ -137,13 +137,21 @@
     <div id="page">
         <style>
 
+    #news{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: var(--padding-size);
+    }
+
     #news *{
         text-align: left;
     }
 
     #news > *{
         margin-inline: var(--space);
-        padding: var(--padding-size);
+        padding-inline: var(--padding-size);
+
     }
 
     #news-img-container {
@@ -157,6 +165,11 @@
         
         margin: 0px;    /* ovveride */
         padding: 0px;    /* ovveride */
+    }
+
+    #news-info *{
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.75);
     }
     
     #news-info>*>*{
@@ -243,6 +256,7 @@ Vermelha Patamar 2: R$ 7,877 por 100 kWh.</p>
 
     }
     .ad{
+        padding-block: var(--padding-size);
         aspect-ratio: 16/9;
         display: flex;
         align-items: center;
