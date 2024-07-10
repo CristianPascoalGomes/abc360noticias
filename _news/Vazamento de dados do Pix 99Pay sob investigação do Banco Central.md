@@ -1,5 +1,5 @@
 ---
-title: "Vazamento de dados do Pix 99Pay sob investigação do Banco Central"
+title: "Vazamento de dados do Pix: 99Pay sob investigação do Banco Central"
 date: 10/07/2024 11:00
 image-source: Facebook @99payoficial
 image-url: assets/images/news/313405844_214481594343008_4100764546562890974_n.jpg
