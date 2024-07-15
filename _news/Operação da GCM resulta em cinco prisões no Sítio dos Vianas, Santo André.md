@@ -1,6 +1,6 @@
 ---
 title: Operação da GCM resulta em cinco prisões no Sítio dos Vianas, Santo André
-date: 15/07/2024 16:40
+date: 15/07/2024 16:00
 image-source: Divulgação / PSA
 image-url: assets/images/news/Acão GCM Sítio dos Vianas_Divulgação I.jpeg
 highlight: true
