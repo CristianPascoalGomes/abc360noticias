@@ -1,5 +1,5 @@
 ---
-title: São Caetano marca presença nas olimpíadas de Paris com 12 Atletas
+title: São Caetano marca presença nas olimpíadas de Paris com 12 atletas
 date: 16/07/2024 11:10
 image-source: PMSCS
 image-url: assets/images/news/Yuri Guimarães - Tema Esporte - Entrevistados Revista 2021  (3).JPG
