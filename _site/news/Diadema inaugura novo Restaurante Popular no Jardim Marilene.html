@@ -166,7 +166,7 @@
         align-content: center;
         
         margin: 0px;    /* ovveride */
-        padding-inline: var(--padding-size);    
+        padding: 0px;    /* ovveride */
     }
 
     #news-info *{
@@ -185,7 +185,7 @@
     
     @media only screen and (min-device-width: 640px){
         #news-img-container{
-            margin-inline: var(--space);
+            margin-inline: calc(var(--space) + var(--padding-size));
         }
 
         #news-info>*{
