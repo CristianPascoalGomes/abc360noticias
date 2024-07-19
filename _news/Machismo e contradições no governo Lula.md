@@ -3,6 +3,7 @@ title: Machismo e contradições no governo Lula
 date: 18/07/2024 21:40
 image-source: © Marcelo Camargo/Agência Brasil
 image-url: assets/images/news/lula snob.webp
+highlight: true
 ---
 
 O presidente Lula fez uma piada sobre violência doméstica após um jogo de futebol, envolvendo o Corinthians. O comentário machista é mais um de uma série que Lula vem fazendo há anos, sem receber críticas do movimento feminista de esquerda.
