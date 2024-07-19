@@ -3,6 +3,7 @@ title: "Ministério da Fazenda revisita projeções econômicas: PIB menor, infl
 date: 18/07/2024 17:50
 image-source: Lula Marques / Agência Brasil
 image-url: assets/images/news/malddad.webp
+highlight: true
 ---
 
 O Boletim MacroFiscal da Secretaria de Política Econômica (SPE) do Ministério da Fazenda apresentou uma revisão das projeções econômicas para os próximos anos. Para 2024, a previsão do PIB permanece em 2,5%, mas a expectativa para a inflação aumentou de 3,70% para 3,90%.
