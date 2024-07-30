@@ -3,7 +3,7 @@ title: Gilvan anuncia hoje seu vice. Silvia Grecco lidera bolsa de apostas
 date: 30/07/2024 00:05
 image-source: Instagram de @silviagrecco_ e @gilvan45
 image-url: assets/images/news/gilvan j e silvia.jpg
-highlight: true
+highlight: false
 author: João Antonio Cardoso
 ---
 
