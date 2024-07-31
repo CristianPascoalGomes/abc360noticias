@@ -3,6 +3,8 @@ title: "Você no ABC 360: Desrespeito de motociclistas no Corredor ABD"
 date: 31/07/2024 12:25
 image-source: "@eliton94 / Eliton Silva"
 image-url: assets/images/news/motos delito 16 9.jpg
+author: João Antonio Cardoso
+highlight: true
 ---
 
 As obras da Prefeitura no Corredor ABD, em São Bernardo, já estão causando caos no trânsito, e a situação piora com motociclistas desrespeitando as regras e transitando sobre calçadas. Seguidor da nossa página nos enviou imagens de vários motociclistas circulando pela calçada próximo à Refrigerantes Dolly por conta do engarrafamento tão grande que nem espaço pras motos sobrou.
