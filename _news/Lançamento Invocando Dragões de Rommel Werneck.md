@@ -2,7 +2,7 @@
 title: "Lançamento: \"Invocando Dragões\" de Rommel Werneck"
 date: 07/08/2024 16:00
 image-source: Divulgação
-image-url: assets/images/ads/livro 16 9.jpeg
+image-url: assets/images/ads/livro low res.jpg
 highlight: true
 ---
 
