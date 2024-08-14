@@ -1,5 +1,5 @@
 ---
-title: "Lula da proposta ilegal para Venezuela: Segundo turno"
+title: "Lula dá proposta ilegal para Venezuela: Segundo turno"
 date: 14/08/2024 11:20
 image-source: Fabio Rodrigues-Pozzebom/ Agência Brasil
 image-url: assets/images/news/lula apontando pra si.jpg
