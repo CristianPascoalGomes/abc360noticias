@@ -1,5 +1,5 @@
 ---
-title: Policial Militar do Rio Grande do Sul intervém em roubo e assaltante é morto em confronto
+title: Policial militar do Rio Grande do Sul intervém em roubo e assaltante é morto em confronto
 date: 29/08/2024 15:19
 image-url: assets/images/news/Policial Militar do Rio Grande do Sul intervém em roubo e assaltante é morto em confronto.jpg
 highlight: true
