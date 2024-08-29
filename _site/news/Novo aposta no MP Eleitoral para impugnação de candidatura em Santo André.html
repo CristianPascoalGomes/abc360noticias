@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ABC 360 Notícias - Novo aposta no MP Eleitoral para impugnação de candidatura em Santo André</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/art/symbol.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
+</head>
+
+<body>
+    <style>
+    #navigation {
+        width: 100%;
+        background-color: #015F83;
+        color: white;
+        
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+
+    #navigation a {
+        padding: var(--padding-size);
+    }
+    
+    #navigation-inner {
+        margin-inline: var(--space);
+    }
+
+    #navigation-inner > * {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #drop-down-menu {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #drop-down-hidden{
+        display: none;
+    }
+
+    #nav-left{
+        display: none;
+    }
+
+    #nav-right{
+        font-size: larger;
+        text-decoration: none;
+    }
+
+    #navigation a:hover {
+        color: rgb(254, 199, 45);
+        cursor: pointer;
+    }
+
+    @media only screen and (min-device-width: 720px){
+        #drop-down-button{
+            display: none;
+        }
+
+        #nav-left{
+            display: inline;
+        }
+    }
+</style>
+
+
+<nav id="navigation">
+    <div id="navigation-inner">
+        <div id="nav-top">
+            <a id="drop-down-button" class="fa fa-bars">
+
+            </a>
+
+            <div id="nav-left">
+                
+                <a href="/" >
+                    Página Inicial
+                </a>
+                
+                <a href="/quem-somos.html" >
+                    Quem Somos
+                </a>
+                
+                <a href="/nosso-time.html" >
+                    Nosso Time
+                </a>
+                
+            </div>
+
+            <div id="nav-right">
+                <a id="facebook" class="fa-facebook fa" href="https://www.facebook.com/abc360noticias/"></a>
+                <a id="instagram" class="fa-instagram fa" href="https://www.instagram.com/abc360noticias/"></a>
+            </div>
+        </div>
+        <div id="drop-down-hidden">
+            
+            <a href="/" >
+                Página Inicial
+            </a>
+            
+            <a href="/quem-somos.html" >
+                Quem Somos
+            </a>
+            
+            <a href="/nosso-time.html" >
+                Nosso Time
+            </a>
+            
+        </div>
+    </div>
+</nav>
+
+<script>
+    const dropdownMenu = document.querySelector("#drop-down-hidden");
+    const dropdownButtom = document.querySelector("#drop-down-button");
+    function toggleDropDownMenu(){
+        if (dropdownMenu.id == "drop-down-menu") {
+            dropdownButtom.classList.remove("fa-times");
+            dropdownButtom.classList.add("fa-bars");
+            dropdownMenu.id = "drop-down-hidden";
+            return;
+        }
+        dropdownButtom.classList.remove("fa-bars");
+        dropdownButtom.classList.add("fa-times");
+        dropdownMenu.id = "drop-down-menu";
+    }
+    dropdownButtom.addEventListener("click", toggleDropDownMenu);
+</script>
+    <div id="page">
+        <style>
+
+    #news{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        gap: var(--padding-size);
+        margin-bottom: var(--padding-size);
+    }
+
+    #news *{
+        text-align: left;
+    }
+
+    #news > *{
+        margin-inline: var(--space);
+        padding-inline: var(--padding-size);
+
+    }
+
+    #news-img-container {
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        display: grid;
+        grid-auto-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+        margin: 0px;    /* ovveride */
+        padding: 0px;    /* ovveride */
+    }
+
+    #news-info *{
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+    
+    #news-info>*>*{
+        display: inline;
+    }
+    
+    #news-body{
+        display: grid;
+        gap: var(--padding-size);
+        height: fit-content;
+    }
+    
+    @media only screen and (min-device-width: 640px){
+        #news-img-container{
+            margin-inline: calc(var(--space) + var(--padding-size));
+        }
+
+        #news-info>*{
+            display: inline;
+            margin-right: 16px;
+        }
+
+        #news-content{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: calc(var(--padding-size) * 3);
+        }
+    }
+</style>
+
+
+<div id="news">
+    <div id="news-img-container">
+        <img src="/assets/images/news/zacarindo%2016%209.jpg" alt="">
+    </div>
+    <div id="news-head">
+        <h1>
+            Novo aposta no MP Eleitoral para impugnação de candidatura em Santo André
+        </h1>
+        <div id="news-info">
+            <div>
+                <p class="fa fa-user-circle-o"></p>
+                <p>
+                    Cristian Pascoal Gomes
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-calendar"></p>
+                <p>
+                    29 August 2024
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-clock-o"></p>
+                <p>
+                    12:55
+                </p>
+            </div>
+            <div>
+                <p class="fa fa-picture-o"></p>
+                <p>
+                    Instaagram de @zacarias.santoandre
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="news-content">
+        <div id="news-body">
+            <p>O diretório do partido Novo em Santo André decidiu não mais liderar o pedido de impugnação da candidatura de Luiz Zacarias (PL) à prefeitura. Inicialmente, o partido prometeu agir, mas agora prefere que o Ministério Público Eleitoral tome a dianteira após receber denúncias sobre o vice-prefeito. Segundo Paulo Proieti, presidente do Novo, a decisão visa priorizar ações que envolvem o candidato do partido, Coronel Edson Sardano, em eventos políticos. O partido agora aguarda a atuação do MP para decidir seus próximos passos.</p>
+
+        </div>
+        <style>
+    
+    #side-column {
+
+    }
+    .ad{
+        margin-block: var(--padding-size);
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        background-color: gainsboro;
+    }
+    #ad-column>*>img{
+        font-size: xx-large;
+        text-align: center;
+    }
+
+</style>
+
+
+<div id="ad-column">
+    <!-- <h2 id="ad-title">
+        Patrocinio
+    </h2> -->
+
+
+    <a class="ad" id="ad1" href="https://wa.me/+5511959963937?text=Estou Interessado em divulgar meu produto no seu site.">
+        <img class="ad-img" src="" alt="Divulgue aqui">
+    </a>
+</div>
+    </div>
+</div>
+    </div>
+    <style>
+    footer{
+        background-color: #015F83;
+        color: white;
+        font-size: small;
+        display: flex; /* fix colapsing margins */
+    }
+    
+    #footer-inner {
+        width: 100%;
+        margin-block: var(--padding-size);
+        margin-inline: var(--space);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    #footer-inner *{
+        font-size: smaller;
+    }
+
+    #footer-inner h3{
+        font-size: small;
+    }
+    
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-column>*{
+        padding-block: calc(0.5 * var(--padding-size));
+        padding-inline: var(--padding-size);
+    }
+    
+    #footer2 .fa{
+        display: inline-block;      /* making fa icons square */  
+        width: 16px;                /* making fa icons square */  
+        height: 16px;               /* making fa icons square */  
+    }
+
+    .contact>*{
+        display: inline;
+    }
+    
+    @media only screen and (min-device-width: 720px){
+        #footer-inner{
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        #footer1>*{
+            text-align: left;
+        }
+
+        #footer2>*{
+            text-align: right;
+            display: block;
+        }
+
+    }
+</style>
+
+
+<footer>
+    <div id="footer-inner">
+        <div class="footer-column" id="footer1">
+            <h3>
+                INSTITUCIONAL
+            </h3>
+            
+                <a href="/">Página Inicial</a>
+            
+                <a href="/quem-somos.html">Quem Somos</a>
+            
+                <a href="/nosso-time.html">Nosso Time</a>
+            
+        </div>
+        <div class="footer-column" id="footer2">
+            <h3>
+                FALE CONOSCO
+            </h3>
+            <div class="contact">
+                <p> contato@abc360.com.br</p>
+                <p class="fa fa-envelope"></p>
+            </div>
+            <a href="https://wa.me/+5511959963937" class="contact">
+                <p>(11) 95996-3937</p>
+                <p class="fa fa-whatsapp"></p>
+            </a>
+            <a href="https://www.instagram.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-instagram"></p>
+            </a>
+            <a href="https://www.facebook.com/abc360noticias/" class="contact">
+                <p>@abc360noticias</p>
+                <p class="fa fa-facebook"></p>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
