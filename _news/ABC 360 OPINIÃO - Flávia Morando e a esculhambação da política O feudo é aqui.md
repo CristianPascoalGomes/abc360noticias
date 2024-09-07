@@ -23,6 +23,6 @@ Flávia? Não podemos falar muito sobre ela, pois, curiosamente, sua presença �
 
 É como se estivéssemos voltando ao Brasil feudal, onde o poder é transferido de tio para sobrinha, pai para filho, sem qualquer respeito pela meritocracia ou vontade popular.
 
-O povo de SBC merece mais do que uma escolha ditada pelos laços de sangue, ela merece uma escolha baseada na competência, no debate aberto e na transparência.. 
+O povo de SBC merece mais do que uma escolha ditada pelos laços de sangue, ela merece uma escolha baseada na competência, no debate aberto e na transparência.
 
 Espera-se a resposta do eleitor sambernadense nas urnas, dizendo não a essa esculhambação da política.
