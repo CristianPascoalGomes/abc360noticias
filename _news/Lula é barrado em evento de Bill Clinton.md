@@ -3,6 +3,7 @@ title: Lula é barrado em evento de Bill Clinton
 date: 26/09/2024 16:24
 image-source: José Cruz/Agência Brasil
 image-url: assets/images/news/lula ashamed 16 x 9 .jpg
+highlight: true
 ---
 
 O presidente Lula enfrentou uma série de constrangimentos durante sua recente viagem a Nova York para a Assembleia Geral da ONU. O discurso, que buscava promover uma agenda ambiental, foi recebido com ceticismo, especialmente em meio aos graves incêndios no Brasil, piores que em anos anteriores. Além disso, vozes críticas afirmam que Lula perdeu moral em discussões ambientais, enquanto figuras como Greta Thunberg e Leonardo DiCaprio permaneceram em silêncio.
