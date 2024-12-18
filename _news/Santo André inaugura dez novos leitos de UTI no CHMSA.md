@@ -2,7 +2,7 @@
 title: "Santo André inaugura dez novos leitos de UTI no CHMSA"
 date: 18/12/2024 18:28
 location: Santo André
-tags: #saude publica #uti #SantoAndre #CHMSA #investimentoemsaude #saude #hospitalpublico #prefeituradesantoandre #modernizacao #equipamentosdeultimageneracao #abc360noticias
+tags: #saude #uti #SantoAndre #CHMSA #hospitalpublico #santoandre #modernizacao #abc360noticias
 mentions: Paulo Serra, Acacio Miranda, CHMSA, Centro Hospitalar Municipal de Santo André, Santa Casa, Qualisaúde.
 image-source: Helber Aggio/PSA
 image-url: assets/images/news/Santo André inaugura dez novos leitos de UTI no CHMSA.jpg
