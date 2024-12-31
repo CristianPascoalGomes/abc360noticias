@@ -6,6 +6,7 @@ tags: #Eleições2024 #SantoAndré #CâmaraMunicipal #PolíticaSP #PrefeituraSan
 mentions: Carlos Ferreira (MDB), Marcelo Chehade (PSDB), Paulo Serra (PSDB), Gilvan Júnior (PSDB), Jobert Minhoca (Podemos), Fábio Lopes (Cidadania), Jair Bolsonaro, Ricardo Alvarez (PSOL).
 image-source: Instagram de @carlosferreiracfsa
 image-url: assets/images/news/Reeleição de presidente da Câmara de Santo André é dada como certa.jpg
+highlight: true
 ---
 
 A reeleição de Carlos Ferreira (MDB) à presidência da Câmara de Santo André é dada como certa antes mesmo da votação desta quarta-feira (1º).  Aliados afirmam que ele já assegurou mais de 20 votos,  superando a candidatura de Marcelo Chehade (PSDB).  A escolha de Ferreira, no entanto, não era a preferência inicial do prefeito Paulo Serra (PSDB), que apoiou a campanha de Gilvan Júnior (PSDB), seu sucessor.  A demora de Ferreira em se alinhar ao projeto do prefeito teria gerado desconforto em alguns tucanos, apesar de agendas conjuntas durante a campanha.
