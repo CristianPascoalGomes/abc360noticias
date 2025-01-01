@@ -6,6 +6,7 @@ tags: #SantoAndré #CâmaraMunicipal #Eleições2024 #MesaDiretora #Política #V
 mentions: Carlos Ferreira (MDB), Ana Veterinária (PSD), Rodolfo Donetti (Cidadania), Zezão (Solidariedade), Wagner Lima (PT), Ricardo Alvarez (PSOL), Bahia do Lava Rápido (PSDB), PL.
 image-source: Instagram @carlosferreiracfsa
 image-url: assets/images/news/Carlos Ferreira assume presidência da Câmara de Santo André.jpg
+highlight: true
 ---
 
 A Câmara Municipal de Santo André terá Carlos Ferreira (MDB) na presidência para o biênio 2025/2026.  Eleito com 23 votos, a chapa vencedora conta ainda com Ana Veterinária (PSD) na vice-presidência, Rodolfo Donetti (Cidadania) como 1º secretário, Zezão (Solidariedade) como 2º secretário e Wagner Lima (PT) como 3º secretário.  Três vereadores do PL, que lançaram chapa própria, votaram contra, e Ricardo Alvarez (PSOL) se absteve.
