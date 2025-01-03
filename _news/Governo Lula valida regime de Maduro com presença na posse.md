@@ -6,6 +6,7 @@ tags: #Venezuela #NicolásMaduro #Brasil #PolíticaExterna #RelaçõesInternacio
 mentions: Nicolás Maduro, Luiz Inácio Lula da Silva, Glivânia Maria de Oliveira, Donald Trump, Edmundo González Urrutia, Hamilton Mourão, Lucas Redecker,  Anne Dias, Julia Zanatta, Alfredo Gaspar, Daniel Ortega, Breno da Costa, Fúlvia Patricia Castro Matu, Claudia Sheinbaum, Javier Milei, Rubens Barbosa, Vito Villar, Elton Gomes, Mauro Vieira, Geraldo Alckmin, Celso Amorim, Maria Oropeza.
 image-source: Marcelo Camargo/Agência Brasil
 image-url: assets/images/news/Governo Lula valida regime de Maduro com presença na posse.jpg
+highlight: true
 ---
 
 A participação de uma embaixadora brasileira na posse de Nicolás Maduro na Venezuela, apesar das denúncias de fraude eleitoral, gera controvérsia.  O Itamaraty justifica o envio de uma representante de "baixo escalão" como demonstração de que o Brasil não reconhece o resultado eleitoral. No entanto, analistas e políticos interpretam a decisão como um reconhecimento tácito do regime de Maduro, contrapondo-se à postura de países ocidentais que rejeitaram a legitimidade do pleito.  Deputados e senadores da oposição criticam veementemente a atitude do governo Lula, classificando-a como apoio a um regime autoritário e contrária aos princípios democráticos.  Especialistas em direito internacional, por outro lado, argumentam que o envio de uma representante oficial, independente do cargo, configura, na prática, um reconhecimento do governo de Maduro.
