@@ -4,7 +4,7 @@ date: 03/01/2025 18:51
 location: São Bernardo do Campo
 tags: #SãoBernardoDoCampo #MarceloLima #SaúdePublica #DemissãoMédico #PolêmicaHospital #AdministraçãoPublica #DireitoAdministrativo #Populismo #GestãoPublica #QualidadeAtendimento #abc360noticias
 mentions: Marcelo Lima, prefeito de São Bernardo do Campo, médico, Hospital de Urgência, serviço público, processo disciplinar, ampla defesa, contraditório, populismo autoritário, administração pública, saúde pública.
-image-source: 
+image-source: Redes Sociais
 image-url: assets/images/news/Marcelo Lima humilha médico, atropela processo legal e diz que o 'demitiu'.jpg
 highlight: true
 ---
