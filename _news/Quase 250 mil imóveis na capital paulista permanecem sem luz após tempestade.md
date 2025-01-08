@@ -6,6 +6,7 @@ tags: #ChuvasSP #TemporalSP #SãoPaulo #Destruição #SemLuz #Granizo #Alagament
 mentions: São Paulo, São Caetano do Sul, Enel, Oswaldo Cruz, Barcelona, Cerâmica, Santo Antônio, Jardim São Caetano, Ferraz de Vasconcelos, Ubatuba, ABC Paulista, zona leste, zona oeste, Vila Ema, Jardim Ione, Defesa Civil.
 image-source: Redes Sociais
 image-url: assets/images/news/Quase 250 mil imóveis na capital paulista permanecem sem luz após tempestade.jpg
+highlight: true
 ---
 
 Fortes chuvas e ventos de até 80 km/h atingiram a Grande São Paulo na terça-feira, deixando um rastro de destruição e milhares de imóveis sem energia elétrica.  A capital paulista foi a mais afetada, com cerca de 216 mil unidades consumidoras sem luz, enquanto São Caetano do Sul, no ABC, registrou um impacto ainda maior proporcionalmente, com mais de 50 mil imóveis sem energia, inicialmente chegando próximo a 60 mil,  representando  uma parcela significativa dos seus domicílios.
