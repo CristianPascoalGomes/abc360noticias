@@ -5,7 +5,7 @@ location: São Paulo
 tags: #JustiçaDoTrabalho #DireitoTrabalhista #ApostasOnline #ExecuçãoTrabalhista #Lei14790 #TribunalRegionalDoTrabalho #TRT2 #AcessoÀJustiça #LavagemDeDinheiro #DevedoresTrabalhistas #abc360noticias
 mentions: 4ª Turma do TRT da 2ª Região, Paulo Sérgio Jakutis, Constituição Federal, Lei 14.790/2023, sites de apostas, bets.
 image-source: DALL.E 3
-url-image: assets/images/news/Justiça do Trabalho autoriza busca de bens em sites de apostas.jpg
+image-url: assets/images/news/Justiça do Trabalho autoriza busca de bens em sites de apostas.jpg
 highlight: true
 ---
 
