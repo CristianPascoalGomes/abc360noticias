@@ -6,7 +6,7 @@ tags: #PoluiçãoSonora #SonoTranquilo #SantoAndré #GCM #Semasa #OperaçãoSono
 mentions: Semasa, GCM, Polícia Civil, Polícia Militar, Jardim, Vila Palmares, Parque Novo Oratório, Jardim Alzira Franco, Santa Teresinha, Utinga, Centro, Operação Sono Tranquilo.
 image-source: Semasa
 image-url: assets/images/news/Operação Sono Tranquilo autua estabelecimentos por poluição sonora em Santo André.jpg
-highlight: false
+highlight: true
 ---
 
 A operação Sono Tranquilo, realizada no último sábado em Santo André, resultou na autuação de 19 estabelecimentos por poluição sonora.  A ação conjunta do Semasa e da GCM inspecionou locais previamente mapeados com histórico de denúncias de moradores, além de atender ocorrências pontuais.  Foram aplicadas advertências e multas a bares e adegas em diversos bairros da cidade, demonstrando a abrangência do problema.
