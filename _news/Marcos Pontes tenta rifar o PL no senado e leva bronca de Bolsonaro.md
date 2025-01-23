@@ -6,7 +6,7 @@ tags: #PolíticaBrasileira #SenadoFederal #Eleições2025 #Bolsonaro #Alcolumbre
 mentions: Marcos Pontes, Bolsonaro, Alcolumbre, Pacheco, Rogério Marinho, Lula, Alexandre de Moraes, Arthur Lira, Eduardo Cunha, Dilma Rousseff,  PSD, PL.
 image-source: Tânia Rêgo e José Cruz/Agência Brasil
 image-url: assets/images/news/Marcos Pontes tenta rifar o PL no senado e leva bronca de Bolsonaro.jpg
-highlight: false
+highlight: true
 ---
 
 A disputa pela presidência do Senado acirra o clima político no Brasil.  A tentativa frustrada do PL de assumir o comando da Casa, culminando na exclusão do partido de todas as comissões, gerou mal-estar.  Agora, a candidatura de Marcos Pontes à presidência do Senado, contrariando o apoio declarado de Bolsonaro a Alcolumbre, reaviva a tensão.  A estratégia de Pontes é vista por muitos como arriscada, com poucas chances de sucesso e potencial para ainda mais prejuízos ao PL.
