@@ -1,11 +1,11 @@
 ---
-title: "Fernanda Torres se desculpa por "blackface" em meio à indicação ao Oscar"
+title: "Fernanda Torres se desculpa por \"blackface\" em meio à indicação ao Oscar"
 date: 29/01/2025 11:47
 location: Rio de Janeiro
 tags: #FernandaTorres #Blackface #Oscar2024 #RacismoNoBrasil #ApropriacaoCultural #IStillHere #Controvérsia #Fantástico #DebateRacial #CulturaBrasileira #abc360noticias
 mentions: Fernanda Torres,  "I'm Still Here",  "Fantastico",  blackface,  Oscar,  Golden Globe,  Demi Moore, Karla Sofia Gascon, Mikey Madison, Cynthia Erivo, Fernanda Montenegro.
 image-source: Fantastico/TV Globo
-image-url: assets/images/news/Fernanda Torres se desculpa por blackface em meio à indicação ao Oscar.jpg
+image-url: "assets/images/news/Fernanda Torres se desculpa por blackface em meio à indicação ao Oscar.jpg"
 highlight: true
 ---
 
