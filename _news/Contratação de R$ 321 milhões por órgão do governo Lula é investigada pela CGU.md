@@ -1,0 +1,12 @@
+---
+title: "Contratação de R$ 321 milhões por órgão do governo Lula é investigada pela CGU"
+date: 03/02/2025 09:29
+location: Brasília
+tags: #CGU #InvestigaçãoGoverno #Licitação #Corrupção #R7Facilities #MinistérioDaGestão #Fraude #Laranjas #ContratosGovernamentais #PolíciaFederal #abc360noticias
+mentions: CGU, R7 Facilities, Ministério da Gestão e da Inovação (MGI), Gildenilson Braz Torres, Esther Dweck, Vinícius Marques de Carvalho, Polícia Federal, Receita Federal, O Estado de S. Paulo, Murilo Jacoby Fernandes, Comando Vermelho.
+image-source: Jose Cruz/Agência Brasil
+image-url: assets/images/news/Contratação de R$ 321 milhões por órgão do governo Lula é investigada pela CGU.jpg
+highlight: true
+---
+
+A Controladoria-Geral da União (CGU) investiga a contratação da R7 Facilities pelo Ministério da Gestão e da Inovação (MGI) por R$ 321 milhões para fornecimento de terceirizados a 12 ministérios.  A empresa, vencedora da licitação, é alvo de suspeitas de fraude, uso de laranjas e declarações falsas.  A investigação preliminar da CGU, iniciada após reportagens do jornal O Estado de S. Paulo, levou à instauração de um Processo Administrativo de Responsabilização (PAR) para apurar possíveis violações às leis anticorrupção e de licitações.  A R7, registrada em nome de Gildenilson Braz Torres, um técnico em contabilidade de baixa renda,  já acumulou R$ 696,8 milhões em contratos com o governo federal desde 2019, expandindo sua atuação significativamente a partir de 2023.  Quatro empresas recorreram da decisão, alegando benefícios fiscais indevidos na proposta da R7. O MGI, por sua vez, afirma que a empresa atende aos requisitos técnicos e financeiros, e que não há condenações que impeçam sua participação. A R7 nega as acusações, atribuindo-as a ataques de concorrentes, e afirma operar dentro da legalidade.  A investigação também abrange outras empresas supostamente ligadas à R7, registradas em nome de beneficiários de programas sociais que alegam desconhecer os negócios. A Polícia Federal e a Receita Federal também foram acionadas para investigar a empresa, em especial após a fuga de dois detentos do presídio federal de Mossoró (RN), onde a R7 prestava serviços. O caso permanece em investigação, com o MGI alegando que a contratação dos terceirizados é centralizada e atende diversos setores do Executivo, enquanto a CGU prossegue com o PAR que pode resultar em multas ou restrições para futuras contratações com o governo.
