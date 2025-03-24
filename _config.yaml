@@ -1,5 +1,5 @@
-domain: abc360.com.br      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://abc360.com.br  # the base hostname and protocol for your site, e.g. http://example.com
+domain: cristianpascoalgomes.github.io      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://cristianpascoalgomes.github.io/abc360noticias/  # the base hostname and protocol for your site, e.g. http://example.com
 livereload: true
 
 collections:
