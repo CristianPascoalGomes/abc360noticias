@@ -6,7 +6,7 @@ tags: #SãoBernardoDoCampo #RegularizaçãoFundiária #Alvarenga #Escrituras #Mo
 mentions: Marcelo Lima, Frida Waidergorn, Jessica Cormick, Alvarenga, Parque Ideal, Projeto Alvarenguinha.
 image-source: Instagram @marcelolimasbc
 image-url: assets/images/news/546 famílias do Alvarenga em São Bernardo recebem escrituras definitivas.jpg
-highlight: false
+highlight: true
 ---
 
 Em São Bernardo do Campo, 546 famílias do Alvarenga receberam, nesta semana, as escrituras definitivas de seus imóveis. A iniciativa, concretizada pela prefeitura, regulariza a situação de moradores do loteamento Parque Ideal, área integrante do Projeto Alvarenguinha.
