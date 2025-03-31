@@ -6,7 +6,7 @@ tags: #LulaNoVietnam #Zelensky #GuerraNaUcrania #BrasilNaGuerra #PolíticaIntern
 mentions: Lula, Putin, Zelensky, Ahmadinejad, Gaddafi, Castro, Ortega, Chávez, Maduro, Erdogan, Xi Jinping, Olaf Scholz.
 image-source: Ricardo Stuckert / PR
 image-url: assets/images/news/Lula continua com discurso pró-Rússia e culpa Zelensky pela guerra.jpg
-highlight: false
+highlight: true
 ---
 
 O presidente Lula reafirmou, durante visita ao Vietnã, que o presidente ucraniano, Zelensky, compartilha responsabilidade pela guerra com a Rússia. A declaração reacende a polêmica sobre a postura do Brasil no conflito.
