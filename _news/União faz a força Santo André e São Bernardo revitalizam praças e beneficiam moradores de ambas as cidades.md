@@ -1,7 +1,7 @@
 ---
 title: "União faz a força: Santo André e São Bernardo revitalizam praças e beneficiam moradores de ambas as cidades"
 date: 05/04/2025 18:06
-location: Não é possível determinar com certeza o nome da cidade onde a matéria aconteceu, pois a notícia cita duas cidades: Santo André e São Bernardo do Campo
+location: Santo André e São Bernardo do Campo
 tags: #revitalização #praças #santoandre #saobernardodocampo #abcpaulista #infraestrutura #lazer #esportes #parceria #prefeituras #abc360noticias
 mentions: Santo André, São Bernardo, Jardim Alvorada, Baeta Neves, Praça São Sebastião, Praça Herbert de Souza (Betinho), Gilvan Junior, Marcelo Lima, Silvana Medeiros, Jessica Cormick, Luiz Sacilotto, José Antônio Ferreira, Fabrinque.
 image-source: Helber Aggio/PSA
