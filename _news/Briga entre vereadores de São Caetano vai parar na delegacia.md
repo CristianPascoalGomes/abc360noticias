@@ -6,7 +6,7 @@ tags: #SãoCaetano #Política #CâmaraMunicipal #BateBoca #Delegacia #Vereadores
 mentions: Carlos Humberto Seraphim (Dr. Seraphim), Getúlio de Carvalho Filho (Getulinho), Bruna Biondi, Edison Parra, Álvaro Moura Seraphim.
 image-source: Instagram @vereadorgetuliofilho e @doutorseraphim
 image-url: assets/images/news/Briga entre vereadores de São Caetano vai parar na delegacia.jpg
-highlight: false
+highlight: true
 ---
 
 A sessão da Câmara de São Caetano, nesta terça (8), terminou em delegacia após bate-boca entre o presidente Carlos Seraphim e o vereador Getulinho. O motivo foi o encerramento da sessão, justificado por Seraphim após ofensas de populares a ele. Getulinho não aceitou, chamando o presidente de "ditador".
